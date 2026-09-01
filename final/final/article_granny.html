@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สอนถักดอกแกรนนี่สแควร์ (Granny Square) ครบทุกขั้นตอน - CrochetStudio</title>
+    <meta name="description" content="เรียนรู้การถักแกรนนี่สแควร์แบบละเอียดทุกขั้นตอน ตั้งแต่รอบแรกถึงการต่อดอก การสลับสี และการนำไปประยุกต์ใช้กับชิ้นงานต่างๆ">
+    <link rel="stylesheet" href="css/style.css?v=3.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-body{max-width:860px;margin:0 auto}
+        .step-box{background:var(--bg-secondary);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:12px;padding:1.5rem 2rem;margin-bottom:1.5rem}
+        .step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:white;font-weight:700;font-size:.95rem;margin-right:.8rem;flex-shrink:0}
+        .step-header{display:flex;align-items:center;margin-bottom:.8rem}
+        .step-header h3{color:var(--text-primary);font-size:1.35rem;margin:0}
+        .tip-box{background:linear-gradient(135deg,rgba(180,120,90,.08),transparent);border:1px solid var(--accent);border-radius:12px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+        .tip-box .tip-title{color:var(--accent);font-weight:700;margin-bottom:.4rem}
+        .warn-box{background:rgba(255,193,7,.08);border:1px solid #ffc107;border-radius:12px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+        .warn-box .warn-title{color:#e6a800;font-weight:700;margin-bottom:.4rem}
+        .pattern-table{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:.95rem}
+        .pattern-table th{background:var(--accent);color:white;padding:.7rem 1rem;text-align:left}
+        .pattern-table td{padding:.6rem 1rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+        .pattern-table tr:last-child td{border-bottom:none}
+        .pattern-table tr:nth-child(even) td{background:rgba(0,0,0,.03)}
+        .toc{background:var(--bg-secondary);border:1px solid var(--border);border-radius:16px;padding:1.5rem 2rem;margin-bottom:2rem}
+        .toc h4{color:var(--accent);margin-bottom:1rem;font-size:1.1rem}
+        .toc ol{margin:0;padding-left:1.5rem}
+        .toc li{margin-bottom:.4rem}
+        .toc a{color:var(--text-secondary);text-decoration:none;transition:color .2s}
+        .toc a:hover{color:var(--accent)}
+        .section-divider{border:none;border-top:2px dashed var(--border);margin:2.5rem 0}
+        .abbr-badge{display:inline-block;background:var(--accent);color:white;font-size:.78rem;font-weight:700;padding:.2rem .6rem;border-radius:6px;margin-right:.4rem}
+        .color-palette{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0}
+        .color-swatch{width:40px;height:40px;border-radius:8px;border:2px solid var(--border);display:inline-block;position:relative}
+        .color-swatch::after{content:attr(data-name);position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:.65rem;color:var(--text-secondary);white-space:nowrap}
+        .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0}
+        .project-card{background:var(--bg-secondary);border:1px solid var(--border);border-radius:12px;padding:1.2rem;text-align:center}
+        .project-card .icon{font-size:2.5rem;margin-bottom:.5rem}
+        .project-card h5{color:var(--accent);font-size:.95rem;margin:0 0 .3rem}
+        .project-card p{font-size:.82rem;color:var(--text-secondary);margin:0}
+    </style>
+</head>
+<body>
+<header id="header">
+    <div class="logo"><a href="index.html"><h1>Crochet<span>Studio</span></h1></a></div>
+    <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="index.html#guide-section" class="active">คลังความรู้</a></li>
+            <li><a href="patterns.html">แพทเทิร์น</a></li>
+            <li><a href="showcase.html">ผลงานชุมชน</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </nav>
+</header>
+
+<section class="hero" style="min-height:38vh;padding-top:9rem;padding-bottom:2rem;">
+    <div class="hero-content reveal">
+        <span class="hero-tag">🌸 Granny Square Step-by-Step</span>
+        <h2 style="font-size:2.8rem;">สอนถักดอกแกรนนี่สแควร์<br>ครบทุกขั้นตอน ตั้งแต่รอบแรก</h2>
+        <p>ระดับ: มือใหม่–ปานกลาง | เวลาที่ใช้: ~2–3 ชั่วโมง/ดอก | โดย CrochetStudio Team</p>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<div class="article-body reveal">
+    <img loading="lazy" src="images/granny_square.jpg" alt="ลายแกรนนี่สแควร์" style="width:100%;height:380px;border-radius:20px;object-fit:cover;margin-bottom:2rem;">
+
+    <p style="font-size:1.15rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:2;">
+        <strong style="color:var(--text-primary);">Granny Square</strong> คือลวดลายโครเชต์สัญลักษณ์ที่มีมาตั้งแต่ปี 1800s และยังคงเป็นที่นิยมมาถึงปัจจุบัน ชื่อนี้มาจากคุณยายชาวตะวันตกที่มักถักดอกเหล่านี้เพื่อนำไปต่อเป็นผ้าห่ม ความสวยงามและความหลากหลายในการประยุกต์ใช้ทำให้แกรนนี่สแควร์กลายเป็นลายที่นักถักทุกระดับต้องรู้จัก
+    </p>
+
+    <div class="toc">
+        <h4><i class="fas fa-list-ul"></i> สารบัญ</h4>
+        <ol>
+            <li><a href="#tools">อุปกรณ์ที่ต้องเตรียม</a></li>
+            <li><a href="#abbr">คำย่อที่ใช้</a></li>
+            <li><a href="#center">รอบที่ 1: สร้างใจกลางดอก</a></li>
+            <li><a href="#round2">รอบที่ 2: ถักกลีบดอกแรก</a></li>
+            <li><a href="#round3">รอบที่ 3: ขยายดอกให้ใหญ่ขึ้น</a></li>
+            <li><a href="#round4">รอบที่ 4: ถักขอบสี่เหลี่ยม</a></li>
+            <li><a href="#moreround">รอบที่ 5+: ต่อขนาดได้ไม่สิ้นสุด</a></li>
+            <li><a href="#colorchange">การสลับสีไหมพรม</a></li>
+            <li><a href="#join">วิธีต่อดอกแกรนนี่เข้าด้วยกัน 3 แบบ</a></li>
+            <li><a href="#colorscheme">การวางแผนจัดสี</a></li>
+            <li><a href="#blocking">การ Blocking ให้ดอกได้ทรง</a></li>
+            <li><a href="#projects">ไอเดียชิ้นงานจากแกรนนี่สแควร์</a></li>
+        </ol>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="tools" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🧺 1. อุปกรณ์ที่ต้องเตรียม</h2>
+    <table class="pattern-table">
+        <thead><tr><th>อุปกรณ์</th><th>รายละเอียด</th></tr></thead>
+        <tbody>
+            <tr><td>🧶 ไหมพรม</td><td>ไหมฝ้าย DK หรือ Worsted สีต่างๆ (แนะนำ 3–5 สี) น้ำหนัก 50g ต่อสี</td></tr>
+            <tr><td>🪝 เข็มโครเชต์</td><td>4.0–5.0 มม. ขึ้นกับไหมที่เลือก อ่านฉลากไหม</td></tr>
+            <tr><td>✂️ กรรไกร</td><td>สำหรับตัดด้ายหลังสลับสี</td></tr>
+            <tr><td>🧵 เข็มปลายทื่อ</td><td>สำหรับซ่อนปลายด้ายจำนวนมาก (งาน Granny มีปลายด้ายเยอะ)</td></tr>
+            <tr><td>📍 Stitch Marker</td><td>ใช้หนีบมุมของดอก ช่วยนับได้ง่ายขึ้น</td></tr>
+            <tr><td>💦 สเปรย์น้ำ + เข็มหมุด</td><td>สำหรับ Blocking หลังถักเสร็จ</td></tr>
+        </tbody>
+    </table>
+
+    <hr class="section-divider">
+
+    <h2 id="abbr" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">📖 2. คำย่อที่ใช้</h2>
+    <table class="pattern-table">
+        <thead><tr><th>ตัวย่อ</th><th>ความหมาย</th></tr></thead>
+        <tbody>
+            <tr><td><span class="abbr-badge">ch</span></td><td>Chain — ถักห่วงโซ่</td></tr>
+            <tr><td><span class="abbr-badge">sl st</span></td><td>Slip Stitch — ห่วงลื่น ใช้ปิดรอบหรือเชื่อมจุด</td></tr>
+            <tr><td><span class="abbr-badge">dc</span></td><td>Double Crochet — ลายสองชั้น หลักของ Granny Square</td></tr>
+            <tr><td><span class="abbr-badge">ch-sp</span></td><td>Chain Space — ช่องว่างจากการถัก ch ไว้</td></tr>
+            <tr><td><span class="abbr-badge">sp</span></td><td>Space — ช่องว่าง</td></tr>
+            <tr><td><span class="abbr-badge">join</span></td><td>เชื่อมต่อ — sl st เข้ากับห่วงแรก</td></tr>
+            <tr><td><span class="abbr-badge">fasten off</span></td><td>ปิดงาน ตัดด้าย ร้อยปิด</td></tr>
+        </tbody>
+    </table>
+
+    <hr class="section-divider">
+
+    <h2 id="center" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">⭕ 3. รอบที่ 1: สร้างใจกลางดอก</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;"><strong>ไหม: สีแรก (ใจกลาง)</strong></p>
+
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">A</span><h3>วิธีที่ 1: เริ่มด้วย ch 4 + sl st</h3></div>
+        <p style="color:var(--text-secondary);">ถัก <strong>ch 4</strong> → sl st เข้าห่วงแรก สุดสาย → ได้เป็นวงกลมเล็กๆ 4 ห่วง<br>
+        จากนั้นถัก <strong>ch 3</strong> (นับเป็น dc แรก) → <strong>dc อีก 2 ครั้ง</strong> ในวง → ch 2 → <strong>dc 3 ครั้ง</strong> ในวง → ch 2 → ทำซ้ำรวม <strong>4 ชุด</strong> → sl st ปิดรอบที่ ch บนสุดของ ch-3 แรก → fasten off สีแรก</p>
+    </div>
+
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">B</span><h3>วิธีที่ 2: เริ่มด้วย Magic Ring (แนะนำ)</h3></div>
+        <p style="color:var(--text-secondary);">ทำ Magic Ring → ถัก <strong>ch 3</strong> → <strong>dc 2</strong> ในวง → <strong>ch 2</strong> → <strong>dc 3</strong> ในวง → ch 2 → ทำซ้ำรวม 4 ชุด → sl st ปิด → ดึงปิดวง Magic Ring → fasten off<br><br>
+        ✅ วิธี Magic Ring ดีกว่า เพราะไม่มีรูตรงกลาง ดอกจะแน่นสวยงามกว่า</p>
+    </div>
+
+    <div class="tip-box">
+        <div class="tip-title">💡 ผลลัพธ์รอบที่ 1</div>
+        <p style="color:var(--text-secondary);margin:0;">จะได้ดอกเล็กๆ มีกลุ่ม dc 3 ตัว รวม 4 กลุ่ม คั่นด้วยช่อง ch-2 ที่มุมทั้ง 4 ด้าน นี่คือรากฐานของดอก Granny Square</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="round2" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🌸 4. รอบที่ 2: ถักกลีบดอกแรก</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;"><strong>เปลี่ยนไหม: สีที่สอง (กลีบดอก)</strong></p>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">1</span><h3>ต่อไหมสีใหม่ที่มุม ch-2</h3></div>
+        <p style="color:var(--text-secondary);">สอดเข็มเข้าในช่อง ch-2 ตรงมุมใดก็ได้ → sl st ต่อไหมสีใหม่เข้า → ถัก <strong>ch 3</strong> (= dc แรก) → <strong>dc 2</strong> → ch 2 → <strong>dc 3</strong> ทั้งหมดในช่อง ch-2 เดิม = มุมแรกเสร็จ!</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">2</span><h3>ถักด้านข้างระหว่างมุม</h3></div>
+        <p style="color:var(--text-secondary);">ถัก <strong>ch 1</strong> → สอดเข็มเข้าในช่องว่างระหว่างกลุ่ม dc ของรอบที่ 1 → ถัก <strong>dc 3</strong> → ch 1 = ด้านข้างหนึ่งด้าน</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">3</span><h3>ทำมุมต่อไป</h3></div>
+        <p style="color:var(--text-secondary);">เมื่อถึงช่อง ch-2 มุมถัดไป → ถัก <strong>dc 3, ch 2, dc 3</strong> ในช่องมุม → ทำซ้ำจนครบ 4 มุม และ 4 ด้าน → sl st ปิด → fasten off สีที่สอง</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="round3" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🌺 5. รอบที่ 3: ขยายดอกให้ใหญ่ขึ้น</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;"><strong>เปลี่ยนไหม: สีที่สาม หรือสีเดิม</strong></p>
+    <div class="step-box">
+        <p style="color:var(--text-secondary);">ต่อไหมที่มุม → ถัก <strong>(dc 3, ch 2, dc 3) ที่มุม</strong> → ch 1 → <strong>dc 3 ในช่อง ch-1</strong> ด้านข้างชุดแรก → ch 1 → <strong>dc 3 ในช่อง ch-1</strong> ด้านข้างชุดที่สอง → ch 1 → ทำมุมต่อไป → ทำซ้ำจนครบ 4 ด้าน → sl st ปิด → fasten off<br><br>
+        <strong>ผลลัพธ์:</strong> แต่ละด้านมี 2 กลุ่ม dc เรียงกัน, มุมยังคงเป็น (dc 3, ch 2, dc 3)</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="round4" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">⬛ 6. รอบที่ 4: ถักขอบสี่เหลี่ยม</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;"><strong>นิยมใช้สีเข้มหรือสีเดิมทำขอบ</strong></p>
+    <div class="step-box">
+        <p style="color:var(--text-secondary);">ถักเหมือนรอบที่ 3 เพิ่มกลุ่ม dc อีก 1 กลุ่มในแต่ละด้าน → แต่ละด้านจะมี 3 กลุ่ม dc เรียงกัน, มุมยังคงเป็น (dc 3, ch 2, dc 3) → sl st ปิด → fasten off<br><br>
+        <strong>ขนาดประมาณ:</strong> ~10 cm × 10 cm ขึ้นกับขนาดเข็มและไหมที่ใช้</p>
+    </div>
+
+    <div class="tip-box">
+        <div class="tip-title">💡 สูตรง่ายๆ</div>
+        <p style="color:var(--text-secondary);margin:0;">ทุกรอบที่เพิ่มขึ้น = แต่ละด้านมีกลุ่ม dc เพิ่มขึ้น 1 กลุ่ม มุมคง (dc 3, ch 2, dc 3) เสมอ จะถักกี่รอบก็ได้ตามต้องการ</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="moreround" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">📐 7. รอบที่ 5+: ต่อขนาดได้ไม่สิ้นสุด</h2>
+    <table class="pattern-table">
+        <thead><tr><th>จำนวนรอบ</th><th>กลุ่ม dc ต่อด้าน</th><th>ขนาดโดยประมาณ (DK + เข็ม 4.0)</th></tr></thead>
+        <tbody>
+            <tr><td>2 รอบ</td><td>1 กลุ่ม</td><td>~6 cm</td></tr>
+            <tr><td>3 รอบ</td><td>2 กลุ่ม</td><td>~8 cm</td></tr>
+            <tr><td>4 รอบ</td><td>3 กลุ่ม</td><td>~10 cm</td></tr>
+            <tr><td>5 รอบ</td><td>4 กลุ่ม</td><td>~12 cm</td></tr>
+            <tr><td>6 รอบ</td><td>5 กลุ่ม</td><td>~14 cm</td></tr>
+            <tr><td>10 รอบ</td><td>9 กลุ่ม</td><td>~22 cm (ดอกใหญ่)</td></tr>
+        </tbody>
+    </table>
+
+    <hr class="section-divider">
+
+    <h2 id="colorchange" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🎨 8. การสลับสีไหมพรม</h2>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">A</span><h3>วิธีที่ 1: Fasten Off แล้วต่อสีใหม่</h3></div>
+        <p style="color:var(--text-secondary);">จบรอบ sl st ปิด → ตัดด้ายเหลือ 15 cm → ร้อยปิด → เริ่มสีใหม่โดย sl st เข้าที่ช่องมุม → เป็นวิธีที่ง่ายที่สุด มีปลายด้ายเยอะแต่ควบคุมสีได้ดีที่สุด</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">B</span><h3>วิธีที่ 2: Standing Stitch (ไม่มีปลายด้ายเยอะ)</h3></div>
+        <p style="color:var(--text-secondary);">ทำปมลื่นสีใหม่บนเข็ม → สอดเข็มเข้าในช่องที่ต้องการ → ดึงด้ายขึ้น → ถัก dc ปกติ โดยไม่ต้องทำ sl st เชื่อมก่อน เหมาะสำหรับผู้มีประสบการณ์</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">C</span><h3>วิธีที่ 3: Carry Along (พาไหมไปด้วย)</h3></div>
+        <p style="color:var(--text-secondary);">ถักสีใหม่ทับไหมเก่าไปด้วย (Carry the yarn) ใช้กับงานที่สลับสีบ่อยๆ เช่น ลายทาง เพื่อลดจำนวนปลายด้ายที่ต้องซ่อน</p>
+    </div>
+    <div class="warn-box">
+        <div class="warn-title">⚠️ ปลายด้ายในงาน Granny Square</div>
+        <p style="color:var(--text-secondary);margin:0;">งาน Granny Square จะมีปลายด้ายจำนวนมากจากการสลับสี ซ่อนปลายด้ายอย่างน้อย 5–6 ซิกแซกทั้งสองทิศทาง ไม่ใช่แค่ผ่านไปทิศเดียว มิฉะนั้นปลายจะหลุดออกมาเมื่อซัก</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="join" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🔗 9. วิธีต่อดอกแกรนนี่เข้าด้วยกัน 3 แบบ</h2>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">1</span><h3>Whip Stitch (เย็บแบบเย็บกระเป๋า)</h3></div>
+        <p style="color:var(--text-secondary);">วางดอกสองดอกหน้าชนกัน ใช้เข็มปลายทื่อร้อยด้ายผ่านห่วงขอบทั้งสองดอกพร้อมกัน เย็บวนซ้ำทุกห่วง → ได้รอยต่อที่เห็นเส้นด้ายที่ขอบ เหมาะสำหรับงานที่ต้องการรอยต่อเป็นจุดเด่น</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">2</span><h3>Single Crochet Join (ต่อด้วย sc)</h3></div>
+        <p style="color:var(--text-secondary);">วางดอกหน้าชนกัน ถัก sc ผ่านห่วงขอบทั้งสองดอกพร้อมกัน → ได้รอยต่อที่เห็นสันนูน ดูเป็นเอกลักษณ์ เป็นที่นิยมมาก</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">3</span><h3>Join As You Go (JAYG) — ต่อระหว่างถัก</h3></div>
+        <p style="color:var(--text-secondary);">ขณะถักรอบสุดท้ายของดอกที่ 2 เมื่อถึงด้านที่ต้องติดกับดอกที่ 1 → แทนที่จะ ch 1 ในแต่ละช่องด้านข้าง → sl st เข้าช่องด้านข้างของดอกที่ 1 แทน → ต่อกันได้ทันทีโดยไม่ต้องเย็บเพิ่ม เร็วที่สุดแต่ฝึกนานกว่า</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="colorscheme" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🌈 10. การวางแผนจัดสี</h2>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>Planned Colorwork — วางแผนล่วงหน้า</h3></div>
+        <p style="color:var(--text-secondary);">วาดตารางบนกระดาษ วางสีแต่ละดอกให้สมดุล เช่น สีเข้มสลับสีอ่อน, สีเย็นข้างสีอุ่น ถ่ายรูปม้วนไหมวางข้างกันเพื่อดูผลรวมก่อนถัก</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>Random Colorwork — สุ่มสี</h3></div>
+        <p style="color:var(--text-secondary);">ดึงไหมจากถุงสุ่มโดยไม่ดู ได้ผลแบบ "Boho" ที่หลายคนชื่นชอบ ตรวจสอบหลังต่อแล้วว่าสีเดียวกันไม่ติดกัน 2 ดอก</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>Ombre / Gradient — ไล่สี</h3></div>
+        <p style="color:var(--text-secondary);">เรียงสีจากอ่อนไปเข้ม เช่น ขาว → ชมพูอ่อน → ชมพู → แดง ตามทิศทางที่ต้องการ ได้ผลงานที่ดูมีระดับและศิลปะ</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="blocking" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">💧 11. การ Blocking ให้ดอกได้ทรง</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;">Blocking คือการใช้น้ำและแรงดึงเพื่อให้ชิ้นงานได้รูปทรงที่สมบูรณ์ สำคัญมากสำหรับ Granny Square ที่ต้องต่อกันหลายดอก</p>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">1</span><h3>Wet Blocking (แช่น้ำ)</h3></div>
+        <p style="color:var(--text-secondary);">แช่ดอกในน้ำเย็น 10–15 นาที → บีบน้ำออกเบาๆ (ไม่บิด) → วางบนผ้าขนหนู → หมุดยึดมุมทั้ง 4 ของดอกให้ตรงตามขนาดที่ต้องการ → ทิ้งไว้ให้แห้งสนิท เหมาะกับ Cotton และ Wool</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">2</span><h3>Steam Blocking (ไอน้ำ)</h3></div>
+        <p style="color:var(--text-secondary);">หมุดยึดดอกให้ได้ทรงก่อน → ใช้เตารีดไอน้ำ "ลอย" เหนือชิ้นงาน ~5 cm อย่าวางเตารีดลงโดยตรง → ปล่อยไอน้ำผ่านชิ้นงาน → ทิ้งให้เย็นและแห้งก่อนถอดหมุด เหมาะกับ Acrylic</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="projects" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🛍️ 12. ไอเดียชิ้นงานจากแกรนนี่สแควร์</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <div class="icon">🛋️</div>
+            <h5>ผ้าห่ม (Blanket)</h5>
+            <p>ต่อ 40–100 ดอกขึ้นกับขนาดที่ต้องการ งานชิ้นใหญ่แต่ถักทีละดอกไม่เหนื่อย</p>
+        </div>
+        <div class="project-card">
+            <div class="icon">👜</div>
+            <h5>กระเป๋า (Bag)</h5>
+            <p>ต่อ 4–6 ดอกต่อแผ่น ต่อ 2 แผ่น เย็บประกอบ ใส่ซับในพร้อมใช้งาน</p>
+        </div>
+        <div class="project-card">
+            <div class="icon">🧥</div>
+            <h5>เสื้อคาร์ดิแกน</h5>
+            <p>ต้องการดอกจำนวนมากและทักษะการประกอบ เป็นงานขั้นสูงที่สวยมาก</p>
+        </div>
+        <div class="project-card">
+            <div class="icon">🎩</div>
+            <h5>หมวก (Hat)</h5>
+            <p>ถักดอกพิเศษ 6 เหลี่ยม (Hexagon) ต่อกันเป็นหมวก ดูสวยงามมาก</p>
+        </div>
+        <div class="project-card">
+            <div class="icon">🖼️</div>
+            <h5>แผ่นรองแก้ว (Coaster)</h5>
+            <p>ถักแค่ 2 รอบ = ดอกเล็กพอดี ใช้เวลาไม่ถึง 30 นาทีต่อชิ้น</p>
+        </div>
+        <div class="project-card">
+            <div class="icon">🎁</div>
+            <h5>ของขวัญ (Gift Items)</h5>
+            <p>ต่อดอก 2–4 ดอกทำเป็นถุงของขวัญ, ที่คั่นหนังสือ หรือตกแต่งกระป๋อง</p>
+        </div>
+    </div>
+
+    <div class="tip-box">
+        <div class="tip-title">🌟 เคล็ดลับ: ถักดอกให้ครบก่อนต่อ</div>
+        <p style="color:var(--text-secondary);margin:0;">แนะนำให้ถักดอกทั้งหมดที่ต้องการก่อน แล้วค่อย Blocking และต่อทีเดียว จะได้ขนาดสม่ำเสมอและวางแผนสีได้ง่ายกว่าการต่อไปเรื่อยๆ</p>
+    </div>
+
+    <div style="margin-top:3rem;text-align:center;">
+        <button id="mark-read-btn" class="btn btn-primary" data-article-id="article_5" style="font-size:1.2rem;padding:1rem 3rem;border-radius:50px;">
+            <i class="fas fa-check-circle"></i> ทำเครื่องหมายว่าอ่านจบแล้ว ✅
+        </button>
+    </div>
+    <div style="margin-top:2rem;border-top:1px solid var(--border);padding-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="index.html#guide-section" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> กลับสู่คลังความรู้</a>
+        <a href="article_troubleshoot.html" class="btn btn-secondary">บทเรียนถัดไป: แก้ปัญหาการถัก <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+</section>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-brand">
+            <h2>Crochet<span>Studio</span></h2>
+            <p>เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งแรงบันดาลใจ สำหรับคนรักงานถักโครเชต์และนิตติ้ง</p>
+            <div class="socials">
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-col"><h4>คลังความรู้</h4><ul><li><a href="article.html">พื้นฐานโครเชต์</a></li><li><a href="article_amigurumi.html">การถักตุ๊กตา</a></li><li><a href="article_yarn.html">คู่มือไหมพรม</a></li><li><a href="article_hooks.html">คู่มือเข็มถัก</a></li></ul></div>
+        <div class="footer-col"><h4>แพทเทิร์น</h4><ul><li><a href="patterns.html">หมวก &amp; กระเป๋า</a></li><li><a href="patterns.html">เสื้อผ้า</a></li><li><a href="patterns.html">ของตกแต่งบ้าน</a></li></ul></div>
+        <div class="footer-col"><h4>ติดต่อเรา</h4><ul><li><a href="about.html">เรื่องราวของเรา</a></li><li><a href="contact.html">ส่งข้อความหาเรา</a></li><li><a href="faq.html">FAQ</a></li><li><a href="policy.html">นโยบายความเป็นส่วนตัว</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Crochet Studio. Crafted with absolute perfection.</p></div>
+</footer>
+<script src="js/main.js?v=3.0"></script>
+</body>
+</html>

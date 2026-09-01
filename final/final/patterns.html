@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หมวดหมู่แพทเทิร์น - CrochetStudio V2</title>
+    <link rel="stylesheet" href="css/style.css?v=3.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><h1>Crochet<span>Studio</span></h1></a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="index.html#guide-section">คลังความรู้</a></li>
+                <li><a href="patterns.html" class="active">แพทเทิร์น</a></li>
+                <li><a href="showcase.html">ผลงานชุมชน</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 10rem; padding-bottom: 2rem;">
+        <div class="hero-content reveal">
+            <span class="hero-tag">Exclusive Collection</span>
+            <h2 style="font-size: 3.5rem;">หมวดหมู่แพทเทิร์น</h2>
+            <p>ดาวน์โหลดแพทเทิร์นคุณภาพสูงพร้อมวิธีทำอย่างละเอียด เพื่อให้คุณสร้างสรรค์ผลงานชิ้นเอกได้อย่างมั่นใจ</p>
+        </div>
+    </section>
+
+    <!-- Filter Navigation -->
+    <div class="reveal" style="text-align: center; margin-bottom: 3rem; padding: 0 5%;">
+        <div class="filter-group" style="display: inline-flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+            <button class="btn btn-primary filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+            <button class="btn btn-secondary filter-btn" data-filter="accessories">หมวก & กระเป๋า</button>
+            <button class="btn btn-secondary filter-btn" data-filter="amigurumi">ตุ๊กตา (Amigurumi)</button>
+            <button class="btn btn-secondary filter-btn" data-filter="clothes">เสื้อผ้า</button>
+            <button class="btn btn-secondary filter-btn" data-filter="granny">ลายต่อดอก</button>
+        </div>
+    </div>
+
+    <!-- Patterns Grid Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="article-grid" id="pattern-grid">
+            
+            <div class="article-card reveal pattern-item" data-category="accessories">
+                <div class="article-img-wrap">
+                    <span class="article-badge" style="background: var(--accent); color: white;">ระดับ: มือใหม่</span>
+                    <img loading="lazy" src="images/bucket_hat.jpg" alt="หมวก Bucket โครเชต์">
+                </div>
+                <div class="article-content">
+                    <h3>แพทเทิร์นหมวก Bucket โครเชต์</h3>
+                    <p>หมวกทรงฮิต ถักง่ายเสร็จไว เหมาะสำหรับผู้เริ่มต้น ใช้ไหมพรมคอตตอนเส้นอ้วนเบอร์ 4 เข็มขนาด 5.0 มม.</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/bucket_hat.jpg" download="bucket_hat_pattern.jpg" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card reveal pattern-item" data-category="amigurumi">
+                <div class="article-img-wrap">
+                    <span class="article-badge">ระดับ: ปานกลาง</span>
+                    <img loading="lazy" src="images/article_2.png" alt="ตุ๊กตากระต่ายอมิกุรุมิ">
+                </div>
+                <div class="article-content">
+                    <h3>แพทเทิร์นตุ๊กตากระต่ายจิ๋ว</h3>
+                    <p>แพทเทิร์นตุ๊กตา Amigurumi น่ารัก พร้อมวิธีเย็บชิ้นส่วน เหมาะทำเป็นพวงกุญแจหรือของขวัญสุดพิเศษ</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/article_2.png" download="amigurumi_bunny.png" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card reveal pattern-item" data-category="clothes">
+                <div class="article-img-wrap">
+                    <span class="article-badge">ระดับ: ปานกลาง</span>
+                    <img loading="lazy" src="images/oversize_sweater.jpg" alt="เสื้อ Oversize โครเชต์">
+                </div>
+                <div class="article-content">
+                    <h3>แพทเทิร์นเสื้อกันหนาวนิตติ้ง</h3>
+                    <p>เสื้อทรง Oversize ถักด้วยไม้นิตขนาดใหญ่ มีคู่มือคำนวณห่วงสำหรับทุกไซส์ XS–XXL</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/oversize_sweater.jpg" download="oversize_sweater.jpg" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-card reveal pattern-item" data-category="granny">
+                <div class="article-img-wrap">
+                    <span class="article-badge" style="background: var(--accent); color: white;">ระดับ: มือใหม่</span>
+                    <img loading="lazy" src="images/granny_square.jpg" alt="ลายแกรนนี่สแควร์">
+                </div>
+                <div class="article-content">
+                    <h3>ผังลายแกรนนี่สแควร์พื้นฐาน</h3>
+                    <p>รวมผังลาย (Chart) การถักต่อดอกแกรนนี่สแควร์ 5 ลายยอดนิยม พร้อม Diagram แบบละเอียด</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/granny_square.jpg" download="granny_square.jpg" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card reveal pattern-item" data-category="accessories">
+                <div class="article-img-wrap">
+                    <span class="article-badge" style="background: var(--accent); color: white;">ระดับ: มือใหม่</span>
+                    <img loading="lazy" src="images/tote_bag.jpg" alt="กระเป๋า Tote Bag โครเชต์">
+                </div>
+                <div class="article-content">
+                    <h3>กระเป๋าสะพายข้างมินิมอล</h3>
+                    <p>แพทเทิร์นกระเป๋า Tote Bag สุดชิค จุของได้เยอะ ถักง่ายด้วยเชือกร่มหรือไหมพรมเส้นใหญ่</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/tote_bag.jpg" download="tote_bag.jpg" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card reveal pattern-item" data-category="amigurumi">
+                <div class="article-img-wrap">
+                    <span class="article-badge">ระดับ: ปานกลาง</span>
+                    <img loading="lazy" src="images/teddy_bear.jpg" alt="ตุ๊กตาหมี Teddy Bear">
+                </div>
+                <div class="article-content">
+                    <h3>ตุ๊กตาหมีคลาสสิก (Teddy Bear)</h3>
+                    <p>แพทเทิร์นตุ๊กตาหมีสุดน่ารัก พร้อมวิธีเย็บประกอบส่วนต่างๆ ใส่ stuffing และปักจมูกให้เป๊ะ</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/teddy_bear.jpg" download="teddy_bear.jpg" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card reveal pattern-item" data-category="clothes">
+                <div class="article-img-wrap">
+                    <span class="article-badge" style="background: var(--text-primary); color: white;">ระดับ: เชี่ยวชาญ</span>
+                    <img loading="lazy" src="images/crop_top.jpg" alt="เสื้อครอปโครเชต์">
+                </div>
+                <div class="article-content">
+                    <h3>เสื้อครอปสายเดี่ยวซัมเมอร์</h3>
+                    <p>แพทเทิร์นเสื้อครอปสายเดี่ยวสุดฮิต สไตล์ Boho เที่ยวทะเล มีแบบแผน Schematic ทุกไซส์</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/crop_top.jpg" download="crop_top.jpg" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-card reveal pattern-item" data-category="granny">
+                <div class="article-img-wrap">
+                    <span class="article-badge">ระดับ: ปานกลาง</span>
+                    <img loading="lazy" src="images/granny_blanket.jpg" alt="ผ้าห่มต่อดอกโบฮีเมียน">
+                </div>
+                <div class="article-content">
+                    <h3>ผ้าห่มต่อดอกสไตล์โบฮีเมียน</h3>
+                    <p>ไอเดียการจัดเรียงสีและการนำดอกแกรนนี่มาต่อกันเป็นผ้าห่มผืนใหญ่สุดอลังการ มีแผนผังสีแนะนำ</p>
+                    <div class="article-footer" style="padding-top: 1.5rem; justify-content: center;">
+                        <a href="images/granny_blanket.jpg" download="granny_blanket.jpg" class="btn btn-primary" onclick="showToast('เริ่มดาวน์โหลดแพทเทิร์นแล้ว! ขอให้สนุกกับการถักนะคะ', 'success')" style="width: 100%; text-align: center; display: block;"><i class="fas fa-download"></i> โหลดแพทเทิร์นฟรี</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Crochet<span>Studio</span></h2>
+                <p>เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งแรงบันดาลใจ สำหรับคนรักงานถักโครเชต์และนิตติ้ง</p>
+                <div class="socials">
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>คลังความรู้</h4>
+                <ul>
+                    <li><a href="article.html">พื้นฐานนิตติ้ง</a></li>
+                    <li><a href="article_amigurumi.html">การถักตุ๊กตา</a></li>
+                    <li><a href="article_yarn.html">คู่มือไหมพรม</a></li>
+                    <li><a href="article_hooks.html">คู่มือเข็มถัก</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>แพทเทิร์น</h4>
+                <ul>
+                    <li><a href="patterns.html">หมวก & กระเป๋า</a></li>
+                    <li><a href="patterns.html">เสื้อผ้า</a></li>
+                    <li><a href="patterns.html">ของตกแต่งบ้าน</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>ติดต่อเรา</h4>
+                <ul>
+                    <li><a href="about.html">เรื่องราวของเรา</a></li>
+                    <li><a href="contact.html">ส่งข้อความหาเรา</a></li>
+                    <li><a href="faq.html">คำถามที่พบบ่อย</a></li>
+                    <li><a href="policy.html">นโยบายความเป็นส่วนตัว</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Crochet Studio V2. Crafted with absolute perfection.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=v2"></script>
+</body>
+</html>

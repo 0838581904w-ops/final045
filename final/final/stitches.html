@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="สารานุกรมลายถักโครเชต์ (Stitch Directory) รวบรวมข้อมูลลายถักพื้นฐานและระดับสูงทั้งหมด">
+    <title>สารานุกรมลายถัก (Stitch Directory) - CrochetStudio</title>
+    <link rel="stylesheet" href="css/style.css?v=3.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .stitch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+        .stitch-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 15px; padding: 2rem; box-shadow: var(--shadow-sm); transition: transform var(--transition-smooth), box-shadow var(--transition-smooth); }
+        .stitch-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .stitch-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
+        .stitch-title { font-size: 1.5rem; color: var(--accent); margin-bottom: 0.5rem; }
+        .stitch-symbol { font-size: 2.5rem; font-weight: bold; color: var(--text-secondary); opacity: 0.3; }
+        .stitch-abbr { background: var(--bg-primary); padding: 0.2rem 0.5rem; border-radius: 5px; font-size: 0.9rem; font-weight: bold; color: var(--text-primary); border: 1px solid var(--border); display: inline-block; margin-bottom: 1rem; }
+        .stitch-content p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1rem; }
+        .stitch-steps { background: var(--bg-primary); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--accent); margin-bottom: 1rem; }
+        .stitch-steps li { margin-bottom: 0.5rem; font-size: 0.95rem; color: var(--text-secondary); }
+        .section-subtitle { font-size: 2rem; color: var(--text-primary); margin-bottom: 2rem; border-left: 5px solid var(--accent); padding-left: 1rem; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><h1>Crochet<span>Studio</span></h1></a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="index.html#guide-section">คลังความรู้</a></li>
+                <li><a href="patterns.html">แพทเทิร์น</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; padding-top: 10rem; padding-bottom: 2rem;">
+        <div class="hero-content reveal">
+            <span class="hero-tag">Ultimate Reference</span>
+            <h2 style="font-size: 3.5rem;">สารานุกรมลายถัก</h2>
+            <p>Stitch Directory รวบรวมข้อมูล วิธีทำ และสัญลักษณ์ของลายถักโครเชต์ทั้งหมดจบในหน้าเดียว</p>
+        </div>
+    </section>
+
+    <!-- Stitches Directory Section -->
+    <section class="section" style="padding-top: 0; max-width: 1200px; margin: 0 auto; padding-left: 5%; padding-right: 5%;">
+        
+        <h3 class="section-subtitle reveal">หมวดพื้นฐาน (Basic Stitches)</h3>
+        <div class="stitch-grid">
+            
+            <div class="stitch-card reveal">
+                <div class="stitch-header">
+                    <div>
+                        <h4 class="stitch-title">เลื่อนห่วง (Slip Stitch)</h4>
+                        <span class="stitch-abbr">US: sl st / UK: ss</span>
+                    </div>
+                    <div class="stitch-symbol">C</div>
+                </div>
+                <div class="stitch-content">
+                    <p>ลายที่แบนที่สุด ใช้สำหรับจบงาน เชื่อมชิ้นงานให้ติดกัน หรือย้ายตำแหน่งเข็มโดยไม่เพิ่มความสูง</p>
+                    <ul class="stitch-steps">
+                        <li>1. สอดเข็มลงในห่วง</li>
+                        <li>2. พันไหมพรม</li>
+                        <li>3. ดึงไหมพรมลอดผ่านห่วงที่สอด และห่วงบนเข็มในรวดเดียว</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stitch-card reveal">
+                <div class="stitch-header">
+                    <div>
+                        <h4 class="stitch-title">ควักธรรมดา (Single Crochet)</h4>
+                        <span class="stitch-abbr">US: sc / UK: dc</span>
+                    </div>
+                    <div class="stitch-symbol">X</div>
+                </div>
+                <div class="stitch-content">
+                    <p>ลายถักมาตรฐาน เนื้อแน่นทึบ เหมาะมากสำหรับการถักตุ๊กตา (Amigurumi) และกระเป๋า</p>
+                    <ul class="stitch-steps">
+                        <li>1. สอดเข็มลงในห่วง</li>
+                        <li>2. พันไหมพรม ดึงขึ้นมา (ได้ 2 ห่วง)</li>
+                        <li>3. พันไหมพรม ดึงลอดทั้ง 2 ห่วง</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stitch-card reveal">
+                <div class="stitch-header">
+                    <div>
+                        <h4 class="stitch-title">พันหัวเข็มครึ่งครั้ง (Half Double Crochet)</h4>
+                        <span class="stitch-abbr">US: hdc / UK: htr</span>
+                    </div>
+                    <div class="stitch-symbol">T</div>
+                </div>
+                <div class="stitch-content">
+                    <p>ลายกึ่งกลางระหว่าง sc และ dc เนื้อจะนุ่มกว่า sc เล็กน้อย เหมาะกับการถักผ้าพันคอ</p>
+                    <ul class="stitch-steps">
+                        <li>1. พันไหมพรม 1 ครั้ง แล้วสอดเข็มลงในห่วง</li>
+                        <li>2. พันไหมพรม ดึงขึ้นมา (ได้ 3 ห่วง)</li>
+                        <li>3. พันไหมพรม ดึงลอดทั้ง 3 ห่วงรวดเดียว</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stitch-card reveal">
+                <div class="stitch-header">
+                    <div>
+                        <h4 class="stitch-title">พันหัวเข็ม 1 ครั้ง (Double Crochet)</h4>
+                        <span class="stitch-abbr">US: dc / UK: tr</span>
+                    </div>
+                    <div class="stitch-symbol">F</div>
+                </div>
+                <div class="stitch-content">
+                    <p>ลายที่ให้ความสูงเป็น 2 เท่าของ sc งานจะเสร็จไว เนื้อผ้าพลิ้ว เหมาะกับการถักเสื้อผ้า</p>
+                    <ul class="stitch-steps">
+                        <li>1. พันไหม 1 ครั้ง สอดเข็มลงในห่วง ดึงไหมขึ้นมา (ได้ 3 ห่วง)</li>
+                        <li>2. พันไหม ดึงลอด 2 ห่วง (เหลือ 2 ห่วง)</li>
+                        <li>3. พันไหม ดึงลอด 2 ห่วงสุดท้าย</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stitch-card reveal">
+                <div class="stitch-header">
+                    <div>
+                        <h4 class="stitch-title">พันหัวเข็ม 2 ครั้ง (Treble Crochet)</h4>
+                        <span class="stitch-abbr">US: tr / UK: dtr</span>
+                    </div>
+                    <div class="stitch-symbol">E</div>
+                </div>
+                <div class="stitch-content">
+                    <p>ลายที่สูงมากและมีช่องว่างเยอะ มักใช้ในงานที่ต้องการลวดลายโปร่งๆ หรืองานลูกไม้</p>
+                    <ul class="stitch-steps">
+                        <li>1. พันไหม 2 ครั้ง สอดเข็มดึงไหมขึ้นมา (ได้ 4 ห่วง)</li>
+                        <li>2. [พันไหม ดึงลอด 2 ห่วง] ทำซ้ำ 3 ครั้งจนหมด</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="section-subtitle reveal">หมวดเพิ่ม-ลดห่วง (Shaping Stitches)</h3>
+        <div class="stitch-grid">
+            
+            <div class="stitch-card reveal">
+                <div class="stitch-header">
+                    <div>
+                        <h4 class="stitch-title">เพิ่มห่วง (Increase)</h4>
+                        <span class="stitch-abbr">US: inc</span>
+                    </div>
+                    <div class="stitch-symbol">V</div>
+                </div>
+                <div class="stitch-content">
+                    <p>เทคนิคการขยายขนาดชิ้นงานให้กว้างขึ้น</p>
+                    <ul class="stitch-steps">
+                        <li>1. ถัก sc (ลายควักธรรมดา) ลงในช่องปกติ 1 ครั้ง</li>
+                        <li>2. ถัก sc ซ้ำลงใน **ช่องเดิม** อีก 1 ครั้ง (รวมเป็น 2 ห่วงใน 1 ช่อง)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stitch-card reveal">
+                <div class="stitch-header">
+                    <div>
+                        <h4 class="stitch-title">ลดห่วง (Decrease)</h4>
+                        <span class="stitch-abbr">US: dec หรือ inv-dec</span>
+                    </div>
+                    <div class="stitch-symbol">A</div>
+                </div>
+                <div class="stitch-content">
+                    <p>เทคนิคการบีบชิ้นงานให้แคบลง (เช่น ช่วงคอตุ๊กตา)</p>
+                    <ul class="stitch-steps">
+                        <li>1. สอดเข็มเกี่ยวไหมขึ้นมา (2 ห่วง) จากช่องที่ 1</li>
+                        <li>2. สอดเข็มเกี่ยวไหมขึ้นมา (3 ห่วง) จากช่องที่ 2</li>
+                        <li>3. พันไหม ดึงลอดรวดเดียวทั้ง 3 ห่วง เพื่อรวบเป็นหลักเดียว</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Progress Tracking Button -->
+        <div class="reveal" style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">
+            <button id="mark-read-btn" class="btn btn-primary" onclick="markAsRead('article_9')" style="padding: 1rem 3rem; font-size: 1.2rem; border-radius: 50px;">
+                <i class="fas fa-check-circle"></i> ฉันเข้าใจลายถักพื้นฐานทั้งหมดแล้ว
+            </button>
+            <p style="color: var(--text-secondary); margin-top: 1rem; font-size: 0.9rem;">(การกดปุ่มนี้จะบันทึกความคืบหน้าการเรียนรู้ของคุณ)</p>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

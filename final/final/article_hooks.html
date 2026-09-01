@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คู่มือเข็มโครเชต์ฉบับสมบูรณ์ — เลือกเข็ม ดูแล และเทคนิคการใช้ - CrochetStudio</title>
+    <meta name="description" content="คู่มือเข็มโครเชต์ครบถ้วน ครอบคลุมประเภทเข็ม การเลือกขนาด วัสดุต่างๆ เทคนิคการถือ การดูแลรักษา และ Ergonomic Hook สำหรับป้องกันอาการปวดมือ">
+    <link rel="stylesheet" href="css/style.css?v=3.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-body{max-width:860px;margin:0 auto}
+        .step-box{background:var(--bg-secondary);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:12px;padding:1.5rem 2rem;margin-bottom:1.5rem}
+        .step-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--accent);color:white;font-weight:700;font-size:.95rem;margin-right:.8rem;flex-shrink:0}
+        .step-header{display:flex;align-items:center;margin-bottom:.8rem}
+        .step-header h3{color:var(--text-primary);font-size:1.35rem;margin:0}
+        .tip-box{background:linear-gradient(135deg,rgba(180,120,90,.08),transparent);border:1px solid var(--accent);border-radius:12px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+        .tip-box .tip-title{color:var(--accent);font-weight:700;margin-bottom:.4rem}
+        .warn-box{background:rgba(255,193,7,.08);border:1px solid #ffc107;border-radius:12px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+        .warn-box .warn-title{color:#e6a800;font-weight:700;margin-bottom:.4rem}
+        .pattern-table{width:100%;border-collapse:collapse;margin:1.2rem 0;font-size:.95rem}
+        .pattern-table th{background:var(--accent);color:white;padding:.7rem 1rem;text-align:left}
+        .pattern-table td{padding:.6rem 1rem;border-bottom:1px solid var(--border);color:var(--text-secondary)}
+        .pattern-table tr:last-child td{border-bottom:none}
+        .pattern-table tr:nth-child(even) td{background:rgba(0,0,0,.03)}
+        .toc{background:var(--bg-secondary);border:1px solid var(--border);border-radius:16px;padding:1.5rem 2rem;margin-bottom:2rem}
+        .toc h4{color:var(--accent);margin-bottom:1rem;font-size:1.1rem}
+        .toc ol{margin:0;padding-left:1.5rem}
+        .toc li{margin-bottom:.4rem}
+        .toc a{color:var(--text-secondary);text-decoration:none;transition:color .2s}
+        .toc a:hover{color:var(--accent)}
+        .section-divider{border:none;border-top:2px dashed var(--border);margin:2.5rem 0}
+        .hook-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1.5rem 0}
+        .hook-card{background:var(--bg-secondary);border:1px solid var(--border);border-radius:14px;padding:1.4rem;border-top:4px solid var(--accent)}
+        .hook-card h4{color:var(--accent);font-size:1.05rem;margin:0 0 .6rem}
+        .hook-card p{font-size:.88rem;color:var(--text-secondary);margin:0;line-height:1.6}
+        .size-badge{display:inline-block;background:var(--accent);color:white;padding:.2rem .7rem;border-radius:20px;font-size:.8rem;font-weight:700;margin:.2rem .1rem}
+    </style>
+</head>
+<body>
+<header id="header">
+    <div class="logo"><a href="index.html"><h1>Crochet<span>Studio</span></h1></a></div>
+    <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="index.html#guide-section" class="active">คลังความรู้</a></li>
+            <li><a href="patterns.html">แพทเทิร์น</a></li>
+            <li><a href="showcase.html">ผลงานชุมชน</a></li>
+            <li><a href="about.html">เกี่ยวกับเรา</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+    </nav>
+</header>
+
+<section class="hero" style="min-height:38vh;padding-top:9rem;padding-bottom:2rem;">
+    <div class="hero-content reveal">
+        <span class="hero-tag">🪝 Hook Guide Complete Edition</span>
+        <h2 style="font-size:2.8rem;">คู่มือเข็มโครเชต์ฉบับสมบูรณ์<br>เลือกให้ถูก ถักไม่ปวดมือ</h2>
+        <p>เวลาอ่าน: ~12 นาที | โดย CrochetStudio Master</p>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+<div class="article-body reveal">
+    <img loading="lazy" src="images/article_4.png" alt="เข็มโครเชต์หลากชนิด" style="width:100%;height:380px;border-radius:20px;object-fit:cover;margin-bottom:2rem;">
+
+    <p style="font-size:1.15rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:2;">
+        เข็มโครเชต์ (Crochet Hook) คืออุปกรณ์หัวใจของงานถักโครเชต์ การเลือกเข็มที่เหมาะสมไม่เพียงแต่ทำให้ชิ้นงานออกมาสวยงาม แต่ยังช่วยป้องกันอาการปวดมือ ปวดข้อมือ และปวดไหล่จากการถักนานๆ ได้อีกด้วย
+    </p>
+
+    <div class="toc">
+        <h4><i class="fas fa-list-ul"></i> สารบัญ</h4>
+        <ol>
+            <li><a href="#anatomy">ส่วนประกอบของเข็มโครเชต์</a></li>
+            <li><a href="#types">ประเภทเข็มแยกตามวัสดุ</a></li>
+            <li><a href="#sizes">ขนาดเข็มและระบบการวัด</a></li>
+            <li><a href="#match">การจับคู่ขนาดเข็มกับไหมพรม</a></li>
+            <li><a href="#ergonomic">เข็ม Ergonomic — สำหรับผู้ถักบ่อย</a></li>
+            <li><a href="#special">เข็มพิเศษสำหรับงานแต่ละประเภท</a></li>
+            <li><a href="#grip-tech">เทคนิคการถือเข็มลดปวดมือ</a></li>
+            <li><a href="#care">การดูแลและทำความสะอาดเข็ม</a></li>
+            <li><a href="#starter">เข็มชุดแรกแนะนำสำหรับมือใหม่</a></li>
+            <li><a href="#brand">ยี่ห้อเข็มแนะนำ</a></li>
+        </ol>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="anatomy" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🔍 1. ส่วนประกอบของเข็มโครเชต์</h2>
+    <table class="pattern-table">
+        <thead><tr><th>ส่วน</th><th>ชื่อ (อังกฤษ)</th><th>หน้าที่</th></tr></thead>
+        <tbody>
+            <tr><td>ปลายเข็ม (หัว)</td><td>Hook Tip / Point</td><td>ส่วนที่แหลมหรือมน ใช้แทงผ่านห่วง แหลม = ถักง่าย, มน = ไม่แยกเส้นด้าย</td></tr>
+            <tr><td>คอเข็ม</td><td>Throat / Groove</td><td>ร่องที่ด้ายเกาะอยู่ขณะถัก ลึก = จับด้ายดี, ตื้น = ปล่อยด้ายง่าย</td></tr>
+            <tr><td>ลำเข็ม</td><td>Shaft / Shank</td><td>ส่วนตรงกลาง กำหนดขนาดเข็มและขนาดห่วง</td></tr>
+            <tr><td>ที่จับนิ้วหัวแม่มือ</td><td>Thumb Rest / Grip</td><td>ส่วนแบนหรือนูน ช่วยจับเข็มได้มั่นคง</td></tr>
+            <tr><td>ด้ามจับ</td><td>Handle</td><td>ส่วนที่มือถือ อาจเป็นโลหะ ยาง ไม้ หรือซิลิโคน</td></tr>
+        </tbody>
+    </table>
+
+    <hr class="section-divider">
+
+    <h2 id="types" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🛠️ 2. ประเภทเข็มแยกตามวัสดุ</h2>
+    <div class="hook-grid">
+        <div class="hook-card">
+            <h4>🔩 อะลูมิเนียม (Aluminum)</h4>
+            <p><strong>จุดเด่น:</strong> น้ำหนักเบา ลื่นมาก ถักได้เร็ว ราคาถูก หาซื้อง่ายทุกที่<br>
+            <strong>จุดด้อย:</strong> เย็นมือในอากาศหนาว ด้ามเล็กอาจปวดมือถ้าถักนาน<br>
+            <strong>เหมาะกับ:</strong> มือใหม่, งานทั่วไป, ไหม Acrylic</p>
+        </div>
+        <div class="hook-card">
+            <h4>🌳 ไม้/ไม้ไผ่ (Wood/Bamboo)</h4>
+            <p><strong>จุดเด่น:</strong> อบอุ่น เป็นธรรมชาติ ไม่ลื่นมาก ช่วยควบคุมด้ายได้ดี<br>
+            <strong>จุดด้อย:</strong> อาจแตกหรือหักถ้าตกหรือใช้แรงเกิน<br>
+            <strong>เหมาะกับ:</strong> ไหมลื่น (silk, bamboo) ต้องการการควบคุมสูง</p>
+        </div>
+        <div class="hook-card">
+            <h4>🦾 เหล็ก (Steel)</h4>
+            <p><strong>จุดเด่น:</strong> แข็งแรงมาก ขนาดเล็กมาก (0.5–3.5 มม.) สำหรับงานละเอียด<br>
+            <strong>จุดด้อย:</strong> เล็กมาก ถือยาก ไม่เหมาะมือใหม่<br>
+            <strong>เหมาะกับ:</strong> ดอยลี่, ผ้าลูกไม้, ไหม Lace</p>
+        </div>
+        <div class="hook-card">
+            <h4>🧬 พลาสติก/เรซิน (Plastic)</h4>
+            <p><strong>จุดเด่น:</strong> น้ำหนักเบามาก อบอุ่น ราคาถูก มีสีสันสวยงาม<br>
+            <strong>จุดด้อย:</strong> อาจงอได้ถ้าใช้กับไหมแน่นมาก<br>
+            <strong>เหมาะกับ:</strong> เข็มขนาดใหญ่ (6+ มม.), งานหยาบ</p>
+        </div>
+        <div class="hook-card">
+            <h4>💎 Tunisian Crochet Hook</h4>
+            <p><strong>จุดเด่น:</strong> เข็มยาวมีขอเกี่ยวสองด้าน สำหรับลาย Tunisian เฉพาะ<br>
+            <strong>จุดด้อย:</strong> ใช้เฉพาะลาย Tunisian เท่านั้น<br>
+            <strong>เหมาะกับ:</strong> งาน Tunisian Crochet สไตล์คล้ายทอผ้า</p>
+        </div>
+        <div class="hook-card">
+            <h4>🔄 Interchangeable Set</h4>
+            <p><strong>จุดเด่น:</strong> ด้ามจับเดียว เปลี่ยนหัวเข็มได้ ประหยัดต้นทุน<br>
+            <strong>จุดด้อย:</strong> ราคาชุดสูง รอยต่ออาจทำให้ด้ายสะดุด<br>
+            <strong>เหมาะกับ:</strong> ผู้ถักมีประสบการณ์ที่ต้องการความสะดวก</p>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="sizes" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">📏 3. ขนาดเข็มและระบบการวัด</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;">เข็มโครเชต์มีระบบวัดหลายแบบในโลก เข้าใจแล้วจะไม่สับสนอีกต่อไป</p>
+    <table class="pattern-table">
+        <thead><tr><th>มม. (Metric)</th><th>US Size</th><th>UK Size</th><th>เหมาะกับไหม</th></tr></thead>
+        <tbody>
+            <tr><td>2.0 มม.</td><td>—</td><td>14</td><td>Lace, Thread</td></tr>
+            <tr><td>2.5 มม.</td><td>B/1 หรือ C/2</td><td>12</td><td>Fingering, Amigurumi Cotton</td></tr>
+            <tr><td>3.0 มม.</td><td>D/3</td><td>11</td><td>Fine/Sport</td></tr>
+            <tr><td>3.5 มม.</td><td>E/4</td><td>9</td><td>DK</td></tr>
+            <tr><td>4.0 มม.</td><td>G/6</td><td>8</td><td>DK/Worsted</td></tr>
+            <tr><td><strong>4.5 มม. ⭐</strong></td><td>7</td><td>7</td><td><strong>Worsted — แนะนำมือใหม่</strong></td></tr>
+            <tr><td>5.0 มม.</td><td>H/8</td><td>6</td><td>Worsted/Aran</td></tr>
+            <tr><td>5.5 มม.</td><td>I/9</td><td>5</td><td>Aran</td></tr>
+            <tr><td>6.0 มม.</td><td>J/10</td><td>4</td><td>Bulky</td></tr>
+            <tr><td>8.0 มม.</td><td>L/11</td><td>0</td><td>Super Bulky</td></tr>
+            <tr><td>10+ มม.</td><td>N–Q</td><td>—</td><td>Jumbo</td></tr>
+        </tbody>
+    </table>
+    <div class="tip-box">
+        <div class="tip-title">💡 ระบบ US vs UK ตรงข้ามกัน!</div>
+        <p style="color:var(--text-secondary);margin:0;">ระบบ US ตัวเลขมาก = เข็มใหญ่ แต่ระบบ UK ตัวเลขมาก = เข็มเล็ก ระบบ Metric (มม.) ใช้ได้สากลที่สุด แนะนำให้ยึดระบบ มม. เป็นหลัก</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="match" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🎯 4. การจับคู่ขนาดเข็มกับไหมพรม</h2>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>ดูจากฉลากไหมพรมก่อนเสมอ</h3></div>
+        <p style="color:var(--text-secondary);">ฉลากทุกม้วนจะระบุขนาดเข็มที่แนะนำ ใช้เป็น "จุดเริ่มต้น" ไม่ใช่กฎตายตัว เพราะมือแต่ละคนถักหนักแน่นต่างกัน</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>ถักชิ้นทดสอบ (Gauge Swatch) ก่อนเสมอ</h3></div>
+        <p style="color:var(--text-secondary);">ถัก sc 15 × 15 แถว วัด 10 cm กลางชิ้น ถ้าได้ค่าตรงตาม Gauge ในแพทเทิร์น ขนาดเข็มนั้นใช้ได้ ถ้าห่วงใหญ่กว่าเป้าหมายให้เปลี่ยนเป็นเข็มเล็กลง</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>กฎพิเศษสำหรับ Amigurumi</h3></div>
+        <p style="color:var(--text-secondary);">ถักเข็มเล็กกว่าที่ฉลากแนะนำ 1 ไซส์ เสมอ! เช่น ฉลากแนะนำ 3.5 มม. ให้ใช้ 2.5–3.0 มม. แทน เพื่อให้เนื้อผ้าแน่น ใยสังเคราะห์ไม่โผล่ออกมา</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="ergonomic" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🖐️ 5. เข็ม Ergonomic — สำหรับผู้ถักบ่อย</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;">ถ้าถักมากกว่า 2 ชั่วโมงต่อวัน การลงทุนในเข็ม Ergonomic คือสิ่งจำเป็นเพื่อป้องกัน Repetitive Strain Injury (RSI)</p>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">1</span><h3>ด้ามจับยางซิลิโคน (Rubber Grip)</h3></div>
+        <p style="color:var(--text-secondary);">ด้ามหนาและนุ่ม ลดแรงกดทับที่นิ้วมือ ออกแบบให้จับสบาย เหมาะสำหรับผู้ที่มีอาการ Carpal Tunnel หรือข้ออักเสบ ยี่ห้อแนะนำ: Clover Amour, Tulip Etimo</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">2</span><h3>ด้ามจับตามสรีระ (Anatomical Handle)</h3></div>
+        <p style="color:var(--text-secondary);">ออกแบบให้เข้ากับรูปทรงของมือ มีส่วนนูนรองรับฝ่ามือ ลดการหมุนข้อมือ ใช้กล้ามเนื้อน้อยลงในการจับ</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">3</span><h3>ด้ามจับ DIY (ปั้น/พัน)</h3></div>
+        <p style="color:var(--text-secondary);">พันเทปฟองน้ำหรือผ้าพันแผลรอบด้ามเข็มปกติ ประหยัดกว่า แต่ได้ผลดีพอสมควร หรือซื้อ Polymer Clay มาหุ้มด้ามแล้วอบให้แข็ง</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="special" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">⚙️ 6. เข็มพิเศษสำหรับงานแต่ละประเภท</h2>
+    <table class="pattern-table">
+        <thead><tr><th>งานประเภท</th><th>เข็มที่ใช้</th><th>เหตุผล</th></tr></thead>
+        <tbody>
+            <tr><td>Amigurumi</td><td>อะลูมิเนียม 2.0–2.5 มม.</td><td>เล็ก แน่น ไม่ลื่น ควบคุมดี</td></tr>
+            <tr><td>ดอยลี่ / Lace</td><td>เหล็ก 0.5–1.5 มม.</td><td>ละเอียดสุดๆ งานลูกไม้</td></tr>
+            <tr><td>กระเป๋า Tote</td><td>5.0–6.0 มม.</td><td>ไหมหนา ถักไว</td></tr>
+            <tr><td>Tunisian Crochet</td><td>Tunisian Hook (ยาว 30+ cm)</td><td>ถือห่วงหลายอันพร้อมกัน</td></tr>
+            <tr><td>ถักในสระน้ำ (Tapestry)</td><td>อะลูมิเนียมหัวมน</td><td>ไม่แยกเส้นด้ายขณะสอดเข็ม</td></tr>
+            <tr><td>Broomstick Lace</td><td>เข็มถัก + ไม้ขนาดใหญ่</td><td>ลายพิเศษต้องมีอุปกรณ์คู่</td></tr>
+        </tbody>
+    </table>
+
+    <hr class="section-divider">
+
+    <h2 id="grip-tech" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🤲 7. เทคนิคการถือเข็มลดปวดมือ</h2>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">1</span><h3>พักทุก 30–45 นาที</h3></div>
+        <p style="color:var(--text-secondary);">วางงานและยืดนิ้วมือ ข้อมือ และไหล่ ทำ Wrist Rotation (หมุนข้อมือ) 10 ครั้ง ทั้งสองด้าน การพักสม่ำเสมอสำคัญกว่าการหยุดพักนานๆ ครั้งเดียว</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">2</span><h3>ปรับ Tension ให้เหมาะ</h3></div>
+        <p style="color:var(--text-secondary);">ถ้าต้องออกแรงดึงเข็มมากเกินไป = ถักแน่นเกิน ลองใช้เข็มขนาดใหญ่ขึ้น 0.5 มม. หรือคลายมือให้หลวมขึ้น มือที่ออกแรงน้อยลงจะไม่ปวด</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">3</span><h3>ท่านั่งที่ถูกต้อง</h3></div>
+        <p style="color:var(--text-secondary);">นั่งตัวตรง ข้อศอกมีที่รองรับ ไม่ยกไหล่ วางงานบนตักหรือหมอนเพื่อไม่ต้องยกแขนค้าง ถักโดยเคลื่อนข้อมือ ไม่ใช่ทั้งแขน</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">4</span><h3>ออกกำลังกายนิ้วมือ</h3></div>
+        <p style="color:var(--text-secondary);">บีบลูกบอลเล็กๆ หรือแป้งโดว์ก่อนและหลังถัก ช่วยให้กล้ามเนื้อมือแข็งแรงและยืดหยุ่น ลดโอกาสบาดเจ็บในระยะยาว</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="care" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🧹 8. การดูแลและทำความสะอาดเข็ม</h2>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>เข็มอะลูมิเนียม</h3></div>
+        <p style="color:var(--text-secondary);">เช็ดด้วยผ้าแห้งหลังใช้ ถ้าด้ายเหนียวติดให้เช็ดด้วยผ้าชุบน้ำมันมะกอกเล็กน้อย เก็บในกระเป๋าผ้าหรือกล่อง ไม่วางปะปน เพื่อกันงอ</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>เข็มไม้/ไม้ไผ่</h3></div>
+        <p style="color:var(--text-secondary);">ไม่แช่น้ำ ถ้าสกปรกเช็ดด้วยผ้าชื้นแล้วเช็ดแห้งทันที ทาน้ำมันไม้ปีละครั้งเพื่อป้องกันแห้งแตก เก็บห่างจากความชื้นและความร้อน</p>
+    </div>
+    <div class="step-box">
+        <div class="step-header"><span class="step-num">✓</span><h3>เข็ม Ergonomic ด้ามยาง</h3></div>
+        <p style="color:var(--text-secondary);">เช็ดด้วยผ้าชื้นได้ ไม่แช่น้ำเพราะยางอาจบวมหรือเสื่อม เก็บตั้งตรงหรือนอนราบ ไม่กดทับ</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="starter" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🎁 9. เข็มชุดแรกแนะนำสำหรับมือใหม่</h2>
+    <p style="color:var(--text-secondary);margin-bottom:1rem;">ไม่จำเป็นต้องซื้อครบทุกขนาดในครั้งเดียว เริ่มจากขนาดที่ใช้บ่อยก่อน</p>
+    <div class="step-box">
+        <p style="color:var(--text-secondary);">
+            <strong>ชุดเริ่มต้น (งบ ~200–400 บาท):</strong><br>
+            <span class="size-badge">3.5 มม.</span> สำหรับ DK cotton<br>
+            <span class="size-badge">4.5 มม. ⭐</span> Worsted — ฝึกถักทั่วไป<br>
+            <span class="size-badge">5.0 มม.</span> Worsted/Aran หนาขึ้น<br><br>
+            <strong>ชุดขยาย (งบ ~500–800 บาท):</strong><br>
+            <span class="size-badge">2.5 มม.</span> Amigurumi Cotton<br>
+            <span class="size-badge">6.0 มม.</span> กระเป๋า Tote Bulky<br>
+            <span class="size-badge">8.0 มม.</span> ผ้าห่ม Super Bulky
+        </p>
+    </div>
+    <div class="tip-box">
+        <div class="tip-title">💡 ซื้อเป็นชุด (Set) ประหยัดกว่า</div>
+        <p style="color:var(--text-secondary);margin:0;">ชุดเข็มอะลูมิเนียม 9–12 ขนาด ราคาประมาณ 150–400 บาท ในไทยหาซื้อได้ที่ Shopee, Lazada หรือร้านขายอุปกรณ์งานฝีมือ คุ้มกว่าซื้อทีละด้ามมาก</p>
+    </div>
+
+    <hr class="section-divider">
+
+    <h2 id="brand" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🏆 10. ยี่ห้อเข็มแนะนำ</h2>
+    <table class="pattern-table">
+        <thead><tr><th>งบประมาณ</th><th>ยี่ห้อ</th><th>วัสดุ</th><th>จุดเด่น</th></tr></thead>
+        <tbody>
+            <tr><td>ประหยัด</td><td>Susan Bates, Boye</td><td>อะลูมิเนียม</td><td>ราคาถูก ใช้งานได้ดี</td></tr>
+            <tr><td>ประหยัด</td><td>KnitPro / KnitPro Trendz</td><td>พลาสติก/อะลูมิเนียม</td><td>สีสันสวย ราคาปาน</td></tr>
+            <tr><td>ปานกลาง</td><td>Clover Soft Touch</td><td>อะลูมิเนียม + ยาง</td><td>ด้ามนุ่ม ถักนาน</td></tr>
+            <tr><td>ปานกลาง</td><td>Pony / Prym</td><td>อะลูมิเนียม</td><td>คุณภาพดี หาง่าย</td></tr>
+            <tr><td>พรีเมียม</td><td>Clover Amour ⭐</td><td>อะลูมิเนียม + Ergonomic</td><td>ดีที่สุดในตลาด ถักนานไม่ปวด</td></tr>
+            <tr><td>พรีเมียม</td><td>Tulip Etimo</td><td>อะลูมิเนียม + ยางญี่ปุ่น</td><td>คุณภาพสูง ปลายเข็มคมพอดี</td></tr>
+            <tr><td>พรีเมียม</td><td>Furls Streamline</td><td>เรซิน/ไม้</td><td>สวยงาม หายากในไทย</td></tr>
+        </tbody>
+    </table>
+
+    <div style="margin-top:3rem;text-align:center;">
+        <button id="mark-read-btn" class="btn btn-primary" data-article-id="article_4" style="font-size:1.2rem;padding:1rem 3rem;border-radius:50px;">
+            <i class="fas fa-check-circle"></i> ทำเครื่องหมายว่าอ่านจบแล้ว ✅
+        </button>
+    </div>
+    <div style="margin-top:2rem;border-top:1px solid var(--border);padding-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="index.html#guide-section" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> กลับสู่คลังความรู้</a>
+        <a href="article_granny.html" class="btn btn-secondary">บทเรียนถัดไป: ถักแกรนนี่สแควร์ <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+</section>
+
+<footer>
+    <div class="footer-top">
+        <div class="footer-brand">
+            <h2>Crochet<span>Studio</span></h2>
+            <p>เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งแรงบันดาลใจ สำหรับคนรักงานถักโครเชต์และนิตติ้ง</p>
+            <div class="socials">
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-col"><h4>คลังความรู้</h4><ul><li><a href="article.html">พื้นฐานโครเชต์</a></li><li><a href="article_amigurumi.html">การถักตุ๊กตา</a></li><li><a href="article_yarn.html">คู่มือไหมพรม</a></li><li><a href="article_hooks.html">คู่มือเข็มถัก</a></li></ul></div>
+        <div class="footer-col"><h4>แพทเทิร์น</h4><ul><li><a href="patterns.html">หมวก &amp; กระเป๋า</a></li><li><a href="patterns.html">เสื้อผ้า</a></li><li><a href="patterns.html">ของตกแต่งบ้าน</a></li></ul></div>
+        <div class="footer-col"><h4>ติดต่อเรา</h4><ul><li><a href="about.html">เรื่องราวของเรา</a></li><li><a href="contact.html">ส่งข้อความหาเรา</a></li><li><a href="faq.html">FAQ</a></li><li><a href="policy.html">นโยบายความเป็นส่วนตัว</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Crochet Studio. Crafted with absolute perfection.</p></div>
+</footer>
+<script src="js/main.js?v=3.0"></script>
+</body>
+</html>
