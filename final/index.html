@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CrochetStudio - สถาบันการเรียนรู้โครเชต์ออนไลน์ระดับมืออาชีพ แหล่งรวมแพทเทิร์น คู่มือการถัก และเครื่องมือสำหรับคนรักงานฝีมือ">
+    <meta name="keywords" content="โครเชต์, นิตติ้ง, แพทเทิร์น, งานฝีมือ, ถักตุ๊กตา, crochet, knitting, amigurumi">
+    <meta name="author" content="CrochetStudio">
+    <title>CrochetStudio V3 - The Ultimate Professional Platform</title>
+    <link rel="stylesheet" href="css/style.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><h1>Crochet<span>Studio</span></h1></a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">หน้าแรก</a></li>
+                <li><a href="#guide-section">คลังความรู้</a></li>
+                <li><a href="patterns.html">แพทเทิร์น</a></li>
+                <li><a href="tools.html">เครื่องมือ <i class="fas fa-magic" style="font-size: 0.8em;"></i></a></li>
+                <li><a href="showcase.html">ผลงานชุมชน</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content reveal">
+            <span class="hero-tag">Welcome to the New Era</span>
+            <h2>สร้างสรรค์ผลงานชิ้นเอก<br>ด้วยสองมือของคุณ</h2>
+            <p>ค้นพบแพทเทิร์นสุดพิเศษ บทความแนะนำเทคนิคระดับมือโปร และชุมชนคนรักการถักโครเชต์ที่อบอุ่นที่สุด</p>
+            <div class="hero-buttons">
+                <a href="patterns.html" class="btn btn-primary"><i class="fas fa-magic"></i> เริ่มต้นถักเลย</a>
+                <a href="#guide-section" class="btn btn-secondary">เรียนรู้วิธีถัก</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section -->
+    <section class="section">
+        <div class="section-header reveal">
+            <h2>ค้นพบสไตล์ของคุณ</h2>
+            <p>ไม่ว่าคุณจะเป็นมือใหม่หรือผู้เชี่ยวชาญ เรามีเนื้อหาที่จัดเตรียมไว้ให้คุณอย่างครบครัน</p>
+        </div>
+        
+        <div class="bento-grid">
+            <!-- Bento 1: Large -->
+            <a href="article_amigurumi.html" class="bento-card bento-large reveal">
+                <div class="bento-content">
+                    <i class="fas fa-paw bento-icon"></i>
+                    <h3>Amigurumi</h3>
+                    <p>ศิลปะการถักตุ๊กตาสไตล์ญี่ปุ่น เรียนรู้วิธีสร้างตัวละครในฝันของคุณให้ออกมามีชีวิต</p>
+                </div>
+                <img loading="lazy" src="images/article_2.png" alt="Amigurumi" class="bento-image">
+            </a>
+
+            <!-- Bento 2: Medium -->
+            <a href="patterns.html" class="bento-card bento-medium reveal" style="background-color: var(--accent); color: white;">
+                <div class="bento-content">
+                    <i class="fas fa-download bento-icon" style="color: white;"></i>
+                    <h3 style="color: white;">Premium Patterns</h3>
+                    <p style="color: rgba(255,255,255,0.9);">ดาวน์โหลดแพทเทิร์นคุณภาพสูง</p>
+                </div>
+            </a>
+
+            <!-- Bento 3: Small -->
+            <a href="article.html" class="bento-card reveal">
+                <div class="bento-content">
+                    <i class="fas fa-seedling bento-icon"></i>
+                    <h3>Knitting</h3>
+                    <p>พื้นฐานนิตติ้ง</p>
+                </div>
+            </a>
+
+            <!-- Bento 4: Small -->
+            <a href="article_hooks.html" class="bento-card reveal">
+                <div class="bento-content">
+                    <i class="fas fa-tools bento-icon"></i>
+                    <h3>Equipment</h3>
+                    <p>คู่มือเลือกอุปกรณ์</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Step Guide Section (V2) -->
+    <section class="section" id="step-section">
+        <div class="section-header reveal">
+            <h2>คู่มือเริ่มต้นฉบับจับมือทำ</h2>
+            <p>อธิบายละเอียดทุกขั้นตอน สำหรับคนที่ยังไม่เคยจับเข็มมาก่อนเลยโดยเฉพาะ</p>
+        </div>
+
+        <div class="step-container">
+            <!-- Step 1 -->
+            <div class="step-item reveal">
+                <div class="step-marker">1</div>
+                <div class="step-content">
+                    <h3>การจับเข็ม (How to Hold the Hook)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>1. แบบจับดินสอ (Pencil Grip):</strong> ใช้นิ้วโป้งและนิ้วชี้จับที่รอยบุ๋มของเข็มเหมือนจับปากกา ให้นิ้วกลางช่วยประคองด้านล่าง เหมาะกับคนที่ชอบความละเอียด</p>
+                    <p><strong>2. แบบจับมีด (Knife Grip):</strong> คว่ำมือลง นิ้วโป้งกดรอยบุ๋ม นิ้วชี้และนิ้วที่เหลือกำด้ามเข็มไว้หลวมๆ คล้ายเวลาหั่นผัก เหมาะกับคนปวดข้อมือง่ายหรือถักไหมเส้นใหญ่</p>
+                </div>
+                <div class="step-image">
+                    <img loading="lazy" src="images/grip_pencil.jpg" alt="Pencil Grip">
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-item reveal">
+                <div class="step-marker">2</div>
+                <div class="step-content">
+                    <h3>ปมเริ่มต้น (Slip Knot)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 1:</strong> พันไหมพรมรอบนิ้วชี้และนิ้วกลาง 2 รอบให้เกิดจุดไขว้ทับกันเป็นรูปกากบาท (X) บนนิ้ว</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 2:</strong> ดึงไหมพรมเส้นหลัง ลอดใต้เส้นหน้าขึ้นมาให้กลายเป็นห่วง</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 3:</strong> ถอดห่วงออกจากนิ้ว สอดหัวเข็มเข้าไปในห่วงนั้น</p>
+                    <p><strong>ขั้นที่ 4:</strong> ดึงปลายไหมพรมทั้งสองด้านให้ห่วงรูดรัดหัวเข็ม (อย่าให้แน่นจนเข็มขยับไม่ได้ ต้องรูดขึ้นลงได้นิดหน่อย)</p>
+                </div>
+                <div class="step-image">
+                    <img loading="lazy" src="images/article_2.png" alt="Slip Knot">
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-item reveal">
+                <div class="step-marker">3</div>
+                <div class="step-content">
+                    <h3>การถักโซ่ (Chain - ch)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 1:</strong> เอานิ้วชี้มือซ้ายพาดไหมพรมให้ตึง ใช้นิ้วโป้งและนิ้วกลางมือซ้ายบีบตรงปม Slip Knot ใต้เข็มไว้ให้แน่น</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 2:</strong> ใช้หัวเข็ม (มือขวา) ตวัดช้อนใต้เส้นไหมพรมจากด้านหลังมาด้านหน้า (Yarn Over)</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 3:</strong> บิดหัวเข็มคว่ำหน้าลงเล็กน้อย แล้วใช้จะงอยเข็มเกี่ยวไหมพรมดึงลอดผ่านห่วงที่อยู่บนเข็มออกมา</p>
+                    <p style="color: var(--accent); font-weight: 500;">💡 เคล็ดลับ: อย่าเกร็งมือ! ปล่อยให้ไหมไหลลื่น ถักบ่อยๆ โซ่จะขนาดเท่ากันเองครับ</p>
+                </div>
+                <div class="step-image">
+                    <img loading="lazy" src="images/article_6.png" alt="Chain">
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step-item reveal">
+                <div class="step-marker">4</div>
+                <div class="step-content">
+                    <h3>ควักธรรมดา (Single Crochet - sc/X)</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 1:</strong> เริ่มจากถักโซ่ความยาวตามต้องการ จากนั้นสอดหัวเข็มลงในโซ่ช่องที่ 2 (นับถอยหลังถัดจากเข็ม)</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 2:</strong> ตวัดหัวเข็มเกี่ยวไหมพรมดึงลอดช่องโซ่ขึ้นมา (ตอนนี้บนเข็มจะมี 2 ห่วง)</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>ขั้นที่ 3:</strong> ตวัดหัวเข็มเกี่ยวไหมพรมอีก 1 ครั้ง แล้วดึงรวดเดียวผ่านทั้ง 2 ห่วงบนเข็ม!</p>
+                    <p style="color: var(--accent); font-weight: 500;">🎉 ยินดีด้วย! คุณเพิ่งถักลายตัว X สำเร็จ ซึ่งเป็นลายหลักของการถักตุ๊กตาทุกตัวครับ</p>
+                </div>
+                <div class="step-image">
+                    <img loading="lazy" src="images/article_4.png" alt="Single Crochet">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section id="guide-section" class="section">
+        <div class="section-title reveal">
+            <span class="hero-tag">Learn & Master</span>
+            <h2>คลังความรู้โครเชต์</h2>
+            <p>อัพเกรดสกิลการถักของคุณด้วยบทความและคู่มือจากผู้เชี่ยวชาญ</p>
+        </div>
+
+        <!-- Learning Progress Tracker -->
+        <div class="reveal" style="max-width: 1200px; margin: 0 auto 3rem auto; background: var(--bg-secondary); padding: 2rem; border-radius: 20px; border: 1px solid var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h3 style="margin: 0;"><i class="fas fa-graduation-cap" style="color: var(--accent);"></i> ความคืบหน้าการเรียนรู้ของคุณ</h3>
+                <span id="overall-progress-text" style="font-weight: bold; color: var(--accent);">0% (0/8 บทความ)</span>
+            </div>
+            <div style="width: 100%; height: 10px; background: var(--bg-primary); border-radius: 10px; overflow: hidden;">
+                <div id="overall-progress-bar" style="width: 0%; height: 100%; background: var(--accent); transition: width 0.5s ease-out;"></div>
+            </div>
+        </div>
+
+        <!-- Certificate Unlock Reward (Hidden by default) -->
+        <div id="certificate-unlock" style="display: none; max-width: 800px; margin: 0 auto 3rem auto; background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%); padding: 3rem 2rem; border-radius: 20px; color: white; text-align: center; box-shadow: 0 15px 30px rgba(184, 139, 125, 0.4); transform: scale(1); animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+            <i class="fas fa-award" style="font-size: 4rem; margin-bottom: 1rem; color: #ffd700; text-shadow: 0 4px 10px rgba(0,0,0,0.2);"></i>
+            <h2 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem; font-family: var(--font-heading);">Crochet Master Certificate</h2>
+            <p style="font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem;">ขอแสดงความยินดี! คุณได้สำเร็จการศึกษาคู่มือพื้นฐานทั้งหมดแล้ว</p>
+            <button class="btn btn-primary" style="background: white; color: var(--accent); font-weight: bold; padding: 1rem 3rem;" onclick="showToast('ดาวน์โหลดใบประกาศนียบัตรเรียบร้อยแล้ว!', 'success')">
+                <i class="fas fa-download"></i> ดาวน์โหลดใบประกาศฯ
+            </button>
+            <style>
+                @keyframes popIn { 0% { transform: scale(0.8); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+            </style>
+        </div>
+
+        <div class="article-grid">
+            <a href="article.html" id="card-article_1" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge">พื้นฐานนิตติ้ง</span>
+                    <img loading="lazy" src="images/article_1.png" alt="Knitting Basics">
+                </div>
+                <div class="article-content">
+                    <h3>พื้นฐานนิตติ้ง</h3>
+                    <p>เริ่มต้นตั้งแต่การจับไม้ ขึ้นห่วง จนถึงลายถักพื้นฐาน เข้าใจง่ายทำตามได้ทันที</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 5 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="article_amigurumi.html" id="card-article_2" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge">การถักตุ๊กตา</span>
+                    <img loading="lazy" src="images/article_2.png" alt="Amigurumi">
+                </div>
+                <div class="article-content">
+                    <h3>เทคนิค Amigurumi</h3>
+                    <p>ศิลปะการถักตุ๊กตาสไตล์ญี่ปุ่น เรียนรู้วิธีสร้างตัวละครในฝันของคุณให้ออกมามีชีวิต</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 10 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="article_yarn.html" id="card-article_3" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge">วัสดุอุปกรณ์</span>
+                    <img loading="lazy" src="images/pattern_1.png" alt="Yarn Guide">
+                </div>
+                <div class="article-content">
+                    <h3>คู่มือเลือกไหมพรม</h3>
+                    <p>เจาะลึกประเภทของไหมพรม วิธีเลือกใช้ให้เหมาะกับชิ้นงาน และการคำนวณปริมาณ</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 8 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="article_hooks.html" id="card-article_4" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge">เคล็ดลับมือโปร</span>
+                    <img loading="lazy" src="images/article_4.png" alt="Hooks Guide">
+                </div>
+                <div class="article-content">
+                    <h3>เข็มถักแบบไหนที่ใช่?</h3>
+                    <p>เคล็ดลับการเลือกขนาดเข็มโครเชต์ให้แมทช์กับไหมพรม เพื่อชิ้นงานที่สมบูรณ์แบบ</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 5 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="stitches.html" id="card-article_9" class="article-card reveal" style="text-decoration: none; color: inherit; border: 2px solid var(--accent);">
+                <div class="article-img-wrap">
+                    <span class="article-badge" style="background: var(--accent); color: white;">สำคัญมาก</span>
+                    <img loading="lazy" src="images/article_2.png" alt="Stitch Directory">
+                </div>
+                <div class="article-content">
+                    <h3>พจนานุกรมลายถัก</h3>
+                    <p>รวบรวมข้อมูล วิธีทำ และสัญลักษณ์ของลายถักโครเชต์ทั้งหมด (X, T, F, E, V, A) จบในที่เดียว</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> ใช้สำหรับอ้างอิง</span>
+                        <span class="read-btn" style="color: var(--accent);">เปิดพจนานุกรม <i class="fas fa-book"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="article_granny.html" id="card-article_5" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge">ต่อดอกคลาสสิก</span>
+                    <img loading="lazy" src="images/article_5.png" alt="Granny Square">
+                </div>
+                <div class="article-content">
+                    <h3>ดอกแกรนนี่</h3>
+                    <p>แพทเทิร์นคลาสสิกยอดฮิต เรียนรู้วิธีถักและต่อดอกเป็นชิ้นงานที่หลากหลาย</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 7 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="article_sweater.html" id="card-article_6" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge">เสื้อผ้าแฟชั่น</span>
+                    <img loading="lazy" src="images/article_6.png" alt="Sweater Crochet">
+                </div>
+                <div class="article-content">
+                    <h3>ถักสเวตเตอร์</h3>
+                    <p>วิธีวัดตัวและคำนวณห่วง สำหรับการถักเสื้อสเวตเตอร์ตัวแรกของคุณ</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 12 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="article_troubleshoot.html" id="card-article_7" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge" style="background: var(--text-primary); color: white;">มือใหม่ควรรู้</span>
+                    <img loading="lazy" src="images/article_5.png" alt="Troubleshooting">
+                </div>
+                <div class="article-content">
+                    <h3>แก้ปัญหาโลกแตก</h3>
+                    <p>5 ปัญหาหลักที่มือใหม่ทุกคนต้องเจอ (เบี้ยว ย้วย แน่นไป) พร้อมวิธีแก้ไขฉุกเฉิน</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 8 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="article_reading.html" id="card-article_8" class="article-card reveal" style="text-decoration: none; color: inherit;">
+                <div class="article-img-wrap">
+                    <span class="article-badge" style="background: var(--text-primary); color: white;">ระดับกลาง</span>
+                    <img loading="lazy" src="images/article_6.png" alt="Pattern Reading">
+                </div>
+                <div class="article-content">
+                    <h3>วิธีอ่านแพทเทิร์นและผังลาย</h3>
+                    <p>สอนถอดรหัสแพทเทิร์นภาษาอังกฤษและสัญลักษณ์แบบญี่ปุ่น (Chart) ให้คุณถักได้ทั่วโลก</p>
+                    <div class="article-footer">
+                        <span><i class="far fa-clock"></i> 10 นาที</span>
+                        <span class="read-btn">อ่านต่อ <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Quiz Banner -->
+        <div class="reveal" style="max-width: 1200px; margin: 4rem auto 0 auto; background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); padding: 3rem 2rem; border-radius: 20px; text-align: center; border: 2px dashed var(--accent);">
+            <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;">คุณพร้อมหรือยัง?</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">ทดสอบความรู้ทั้งหมดที่คุณได้เรียนรู้มาจากบทความของเรา</p>
+            <a href="quiz.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.2rem; border-radius: 50px;"><i class="fas fa-play"></i> เริ่มทำแบบทดสอบวัดระดับ</a>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Crochet<span>Studio</span></h2>
+                <p>เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งแรงบันดาลใจ สำหรับคนรักงานถักโครเชต์และนิตติ้ง</p>
+                <div class="socials">
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>คลังความรู้</h4>
+                <ul>
+                    <li><a href="article.html">พื้นฐานนิตติ้ง</a></li>
+                    <li><a href="article_amigurumi.html">การถักตุ๊กตา</a></li>
+                    <li><a href="article_yarn.html">คู่มือไหมพรม</a></li>
+                    <li><a href="article_hooks.html">คู่มือเข็มถัก</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>แพทเทิร์น</h4>
+                <ul>
+                    <li><a href="patterns.html">หมวก & กระเป๋า</a></li>
+                    <li><a href="patterns.html">เสื้อผ้า</a></li>
+                    <li><a href="patterns.html">ของตกแต่งบ้าน</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>ติดต่อเรา</h4>
+                <ul>
+                    <li><a href="about.html">เรื่องราวของเรา</a></li>
+                    <li><a href="contact.html">ส่งข้อความหาเรา</a></li>
+                    <li><a href="faq.html">คำถามที่พบบ่อย</a></li>
+                    <li><a href="policy.html">นโยบายความเป็นส่วนตัว</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Crochet Studio V3. Crafted with absolute perfection.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

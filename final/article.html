@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สอนถักโครเชต์เบื้องต้น ทุกขั้นตอน ตั้งแต่เริ่มต้น - CrochetStudio</title>
+    <meta name="description" content="เรียนถักโครเชต์ตั้งแต่ศูนย์ ครบทุกขั้นตอน การถือเข็ม จับด้าย ขึ้นห่วงโซ่ ลาย sc dc และการอ่านแพทเทิร์น สำหรับมือใหม่สมบูรณ์แบบ">
+    <link rel="stylesheet" href="css/style.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-body { max-width: 860px; margin: 0 auto; }
+        .step-box { background: var(--bg-secondary); border: 1px solid var(--border); border-left: 5px solid var(--accent); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; }
+        .step-box h4 { color: var(--accent); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .step-num { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: var(--accent); color: white; font-weight: 700; font-size: 0.95rem; margin-right: 0.8rem; flex-shrink: 0; }
+        .step-header { display: flex; align-items: center; margin-bottom: 0.8rem; }
+        .step-header h3 { color: var(--text-primary); font-size: 1.35rem; margin: 0; }
+        .tip-box { background: linear-gradient(135deg, rgba(180,120,90,0.08), transparent); border: 1px solid var(--accent); border-radius: 12px; padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+        .tip-box .tip-title { color: var(--accent); font-weight: 700; margin-bottom: 0.4rem; }
+        .warn-box { background: rgba(255, 193, 7, 0.08); border: 1px solid #ffc107; border-radius: 12px; padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+        .warn-box .warn-title { color: #e6a800; font-weight: 700; margin-bottom: 0.4rem; }
+        .pattern-table { width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: 0.95rem; }
+        .pattern-table th { background: var(--accent); color: white; padding: 0.7rem 1rem; text-align: left; }
+        .pattern-table td { padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-secondary); }
+        .pattern-table tr:last-child td { border-bottom: none; }
+        .pattern-table tr:nth-child(even) td { background: rgba(0,0,0,0.03); }
+        .toc { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem 2rem; margin-bottom: 2rem; }
+        .toc h4 { color: var(--accent); margin-bottom: 1rem; font-size: 1.1rem; }
+        .toc ol { margin: 0; padding-left: 1.5rem; }
+        .toc li { margin-bottom: 0.4rem; }
+        .toc a { color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+        .toc a:hover { color: var(--accent); }
+        .section-divider { border: none; border-top: 2px dashed var(--border); margin: 2.5rem 0; }
+        .stitch-demo { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .stitch-card { background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 12px; padding: 1.2rem; text-align: center; }
+        .stitch-card .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .stitch-card h5 { color: var(--accent); font-size: 1rem; margin: 0 0 0.4rem; }
+        .stitch-card p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+        .abbr-badge { display: inline-block; background: var(--accent); color: white; font-size: 0.78rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 6px; margin-right: 0.4rem; }
+        .grip-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+        @media (max-width: 600px) { .grip-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo"><a href="index.html"><h1>Crochet<span>Studio</span></h1></a></div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="index.html#guide-section" class="active">คลังความรู้</a></li>
+                <li><a href="patterns.html">แพทเทิร์น</a></li>
+                <li><a href="showcase.html">ผลงานชุมชน</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height:38vh;padding-top:9rem;padding-bottom:2rem;">
+        <div class="hero-content reveal">
+            <span class="hero-tag">🪝 Crochet Basics for Beginners</span>
+            <h2 style="font-size:2.8rem;">สอนถักโครเชต์เบื้องต้น<br>ครบทุกขั้นตอน ตั้งแต่ศูนย์</h2>
+            <p>ระดับ: มือใหม่สมบูรณ์ | เวลาอ่าน: ~20 นาที | โดย CrochetStudio Team</p>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+        <div class="article-body reveal">
+            <img loading="lazy" src="images/article_1.png" alt="การถักโครเชต์เบื้องต้น" style="width:100%;height:380px;border-radius:20px;object-fit:cover;margin-bottom:2rem;">
+
+            <p style="font-size:1.15rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:2;">
+                โครเชต์ (Crochet) คือศิลปะการถักผ้าด้วยเข็มตะขอ (Crochet Hook) และไหมพรม ต้นกำเนิดมาจากยุโรปในศตวรรษที่ 19 และแพร่หลายไปทั่วโลก ความแตกต่างจากนิตติ้งคือ <strong>โครเชต์ใช้เข็มเดียว</strong> และมือหนึ่งมักจะถือเข็ม อีกมือถือชิ้นงาน บทเรียนนี้จะสอนทุกอย่างตั้งแต่การถือเข็มถูกวิธี ไปจนถึงลายพื้นฐานที่ใช้งานได้จริง
+            </p>
+
+            <div class="toc">
+                <h4><i class="fas fa-list-ul"></i> สารบัญ</h4>
+                <ol>
+                    <li><a href="#tools">อุปกรณ์ที่ต้องเตรียม</a></li>
+                    <li><a href="#grip">วิธีถือเข็มและจับด้ายที่ถูกต้อง</a></li>
+                    <li><a href="#slipknot">การทำปมลื่น (Slip Knot)</a></li>
+                    <li><a href="#chain">การถักห่วงโซ่ (Chain / ch)</a></li>
+                    <li><a href="#sc">ลาย Single Crochet (sc) — ลายเดี่ยว</a></li>
+                    <li><a href="#hdc">ลาย Half Double Crochet (hdc)</a></li>
+                    <li><a href="#dc">ลาย Double Crochet (dc) — ลายสองชั้น</a></li>
+                    <li><a href="#turning">การขึ้นรอบใหม่ (Turning Chain)</a></li>
+                    <li><a href="#reading">วิธีอ่านแพทเทิร์นโครเชต์</a></li>
+                    <li><a href="#gauge">การวัด Gauge และปรับขนาด</a></li>
+                    <li><a href="#finish">การปิดงานและซ่อนปลายด้าย</a></li>
+                    <li><a href="#practice">ชิ้นงานฝึกหัดแรก: ที่รองแก้วสี่เหลี่ยม</a></li>
+                </ol>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 1. อุปกรณ์ -->
+            <h2 id="tools" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🧺 ขั้นที่ 1: อุปกรณ์สำหรับผู้เริ่มต้น</h2>
+            <table class="pattern-table">
+                <thead><tr><th>อุปกรณ์</th><th>แนะนำสำหรับมือใหม่</th><th>ราคาโดยประมาณ</th></tr></thead>
+                <tbody>
+                    <tr><td>🪝 เข็มโครเชต์</td><td>ขนาด 4.0–5.0 มม. (จับสบาย มองเห็นห่วงชัด) แนะนำด้ามจับยาง (Ergonomic Handle)</td><td>30–150 บาท</td></tr>
+                    <tr><td>🧶 ไหมพรม</td><td>ไหม 100% Cotton หรือ Acrylic เส้นหนาปานกลาง (DK–Worsted) สีอ่อน มองเห็นห่วงชัด</td><td>50–150 บาท/ม้วน</td></tr>
+                    <tr><td>✂️ กรรไกร</td><td>กรรไกรปลายแหลมสำหรับตัดด้าย</td><td>30–80 บาท</td></tr>
+                    <tr><td>🧵 เข็มปลายทื่อ</td><td>Tapestry Needle ช่องใหญ่ สำหรับร้อยปิดและซ่อนด้าย</td><td>20–50 บาท</td></tr>
+                    <tr><td>📍 Stitch Marker</td><td>ใช้หนีบห่วงแรกของแต่ละรอบ หรือใช้ด้ายสีต่างแทนได้</td><td>30–80 บาท</td></tr>
+                    <tr><td>📏 ไม้บรรทัด</td><td>ไม้บรรทัดหรือตลับเมตรสำหรับวัด Gauge</td><td>มีอยู่แล้ว</td></tr>
+                </tbody>
+            </table>
+            <div class="tip-box">
+                <div class="tip-title">💡 เริ่มต้นด้วยงบน้อย</div>
+                <p style="color:var(--text-secondary);margin:0;">ซื้อเข็มขนาด 4.5 มม. 1 ด้าม + ไหมพรม Worsted 1 ม้วน ก็เริ่มฝึกได้แล้ว ไม่จำเป็นต้องซื้อชุดอุปกรณ์ครบในทีเดียว</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 2. การถือเข็ม -->
+            <h2 id="grip" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">✋ ขั้นที่ 2: วิธีถือเข็มและจับด้ายที่ถูกต้อง</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1.2rem;">การถือเข็มและจับด้ายถูกวิธีเป็นพื้นฐานสำคัญที่สุด ถ้าถือผิดจะเมื่อยมือ ถักช้า และงานออกมาไม่สวย</p>
+
+            <div class="grip-grid">
+                <div class="step-box" style="margin:0;">
+                    <h4>🔪 Knife Grip (จับแบบมีด)</h4>
+                    <p style="color:var(--text-secondary);">จับเข็มเหมือนถือมีด ห้อยด้ามเข็มอยู่ในฝ่ามือ นิ้วหัวแม่มือและนิ้วชี้จับส่วนคอเข็ม ใช้ข้อมือหมุนแทนการใช้นิ้ว <strong>เหมาะสำหรับการถักชิ้นงานใหญ่นานๆ</strong> ไม่เมื่อยมือ</p>
+                </div>
+                <div class="step-box" style="margin:0;">
+                    <h4>✏️ Pencil Grip (จับแบบดินสอ)</h4>
+                    <p style="color:var(--text-secondary);">จับเข็มเหมือนถือดินสอ นิ้วหัวแม่มือและนิ้วชี้อยู่ด้านบน นิ้วกลางรองรับด้านล่าง <strong>เหมาะสำหรับมือใหม่</strong> ให้การควบคุมที่ดีและเห็นห่วงชัดเจน</p>
+                </div>
+            </div>
+
+            <h3 style="color:var(--text-primary);font-size:1.3rem;margin:1.5rem 0 0.8rem;">🤲 วิธีจับด้ายมือซ้าย (Yarn Tension)</h3>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>พาดด้ายผ่านนิ้วมือซ้าย</h3></div>
+                <p style="color:var(--text-secondary);">จับด้ายด้วยมือซ้าย พาดเส้นด้ายผ่านนิ้วชี้จากด้านใน → ใต้นิ้วกลาง → บนนิ้วนาง → ใต้นิ้วก้อย หรือพาดผ่านนิ้วชี้เพียงอย่างเดียวตามที่สะดวก</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>ควบคุมความตึง (Tension)</h3></div>
+                <p style="color:var(--text-secondary);">นิ้วชี้มือซ้ายยกขึ้นตึง ด้ายจะตึงพอดี เมื่อถักเข็มจะดึงด้ายได้ง่าย ความตึงควรสม่ำเสมอตลอดชิ้นงาน ถ้าตึงเกินไปห่วงจะถอดยาก ถ้าหลวมเกินห่วงจะใหญ่ไม่สม่ำเสมอ</p>
+            </div>
+            <div class="tip-box">
+                <div class="tip-title">💡 ไม่มีวิธีถือที่ "ถูก" ที่สุด</div>
+                <p style="color:var(--text-secondary);margin:0;">ลองทั้งสองแบบ แล้วใช้วิธีที่สะดวกและสบายมือที่สุดสำหรับตัวเอง หลายๆ คนก็ดัดแปลงวิธีถือเป็นแบบผสมที่เหมาะกับตัวเอง</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 3. Slip Knot -->
+            <h2 id="slipknot" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🔗 ขั้นที่ 3: การทำปมลื่น (Slip Knot)</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">Slip Knot คือปมแรกที่เริ่มทุกชิ้นงาน มีลักษณะดึงแน่นหรือหย่อนได้ตามต้องการ</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>วางด้ายเป็นวงทับกัน</h3></div>
+                <p style="color:var(--text-secondary);">วางด้ายบนนิ้วชี้และนิ้วกลางมือซ้าย ให้ปลายด้ายอยู่ด้านหน้า ด้ายที่ต่อกับม้วนอยู่ด้านหลัง จากนั้นพาดด้ายฝั่งม้วนข้ามทับด้ายปลาย สร้างเป็นวงกลม</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>ดึงด้ายผ่านวง</h3></div>
+                <p style="color:var(--text-secondary);">จับเข็มโครเชต์ สอดเข้าไปในวง เกี่ยวด้ายฝั่งม้วน ดึงขึ้นมาผ่านวง จะได้ห่วงใหม่บนเข็ม</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>ดึงปมให้แน่นพอดี</h3></div>
+                <p style="color:var(--text-secondary);">ดึงทั้งปลายด้ายและด้ายม้วนพร้อมกัน ปมจะขยับขึ้นชิดกับเข็ม ห่วงควรหลวมพอที่เข็มเลื่อนได้สบาย แต่ไม่หลวมจนตกจากเข็ม</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 4. Chain -->
+            <h2 id="chain" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">⛓️ ขั้นที่ 4: การถักห่วงโซ่ (Chain / ch)</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">Chain คือพื้นฐานที่สุด ใช้เริ่มต้นชิ้นงาน ทำ Border และหลายๆ อย่าง</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>ทำ Slip Knot บนเข็ม</h3></div>
+                <p style="color:var(--text-secondary);">ทำปมลื่น (Slip Knot) บนเข็มตามที่เรียนในขั้นที่ 3 ห่วงนี้ไม่นับเป็น Chain</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>Yarn Over (YO) — พาดด้ายผ่านเข็ม</h3></div>
+                <p style="color:var(--text-secondary);">ยกนิ้วชี้มือซ้ายขึ้น ด้ายจะตึง พาดด้ายผ่านเข็มจากซ้ายไปขวา (หรือหมุนเข็มเกี่ยวด้ายก็ได้)</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>ดึงผ่านห่วงบนเข็ม</h3></div>
+                <p style="color:var(--text-secondary);">ดึงด้ายที่เกี่ยวไว้ผ่านห่วงที่อยู่บนเข็ม ตอนนี้บนเข็มเหลือ 1 ห่วง = สำเร็จ ch 1 ครั้ง ทำซ้ำขั้น 2–3 จนได้จำนวน Chain ตามต้องการ</p>
+            </div>
+            <div class="tip-box">
+                <div class="tip-title">💡 วิธีนับ Chain</div>
+                <p style="color:var(--text-secondary);margin:0;">มองด้านหน้าสาย Chain จะเห็นเป็นรูป V ซ้อนกัน นับ V แต่ละตัวเป็น 1 Chain ห่วงที่อยู่บนเข็มไม่นับ</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 5. Single Crochet -->
+            <h2 id="sc" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🪡 ขั้นที่ 5: Single Crochet (sc) — ลายเดี่ยว</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">sc เป็นลายที่สั้น แน่น ทนทาน ใช้บ่อยที่สุดในงาน Amigurumi และงานกระเป๋า</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>เตรียม Foundation Chain</h3></div>
+                <p style="color:var(--text-secondary);">ถัก Chain ตามจำนวนที่ต้องการ บวก 1 (เพื่อ Turning Chain) เช่น ต้องการ 10 sc ถัก ch 11</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>แทงเข็มผ่านห่วงที่ 2 จากเข็ม</h3></div>
+                <p style="color:var(--text-secondary);">นับจากเข็มมา 2 ห่วง แทงเข็มผ่านห่วงที่ 2 เข็มควรผ่านทั้งด้านบนและด้านล่างของห่วง Chain (2 เส้นด้าย)</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>YO → ดึงขึ้น → YO → ดึงผ่าน 2 ห่วง</h3></div>
+                <p style="color:var(--text-secondary);">พาดด้าย → ดึงขึ้นมาผ่านห่วง Chain (บนเข็มมี 2 ห่วง) → พาดด้ายอีกครั้ง → ดึงผ่าน 2 ห่วงพร้อมกัน = sc เสร็จ! ทำซ้ำในห่วง Chain ถัดไปจนสุดแถว</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 6. HDC -->
+            <h2 id="hdc" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🪡 ขั้นที่ 6: Half Double Crochet (hdc) — ลายครึ่งสอง</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">hdc สูงกว่า sc แต่ต่ำกว่า dc ให้ผ้าที่นุ่ม ยืดหยุ่น เหมาะสำหรับหมวกและกระเป๋า</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>YO ก่อนแทงเข็ม</h3></div>
+                <p style="color:var(--text-secondary);">พาดด้ายผ่านเข็ม <strong>ก่อน</strong> แทงเข็มผ่านห่วงถัดไป (ต่างจาก sc ที่ YO ทีหลัง)</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>แทงเข็ม → YO → ดึงขึ้น</h3></div>
+                <p style="color:var(--text-secondary);">แทงเข็มผ่านห่วง → YO → ดึงขึ้นมา ตอนนี้บนเข็มมี <strong>3 ห่วง</strong></p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>YO → ดึงผ่าน 3 ห่วงพร้อมกัน</h3></div>
+                <p style="color:var(--text-secondary);">พาดด้าย → ดึงผ่านทั้ง 3 ห่วงพร้อมกัน = hdc สำเร็จ สังเกตว่ามีเส้นด้ายพาด (Third Loop) ที่ด้านหลัง ใช้ประโยชน์ได้ในแพทเทิร์นขั้นสูง</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 7. DC -->
+            <h2 id="dc" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🪡 ขั้นที่ 7: Double Crochet (dc) — ลายสองชั้น</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">dc สูงกว่า hdc ผ้าโปร่ง เบา เหมาะสำหรับเสื้อผ้าและผ้าพันคอ</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>YO → แทงเข็ม → YO → ดึงขึ้น</h3></div>
+                <p style="color:var(--text-secondary);">พาดด้าย (YO) → แทงเข็มผ่านห่วง → YO อีกครั้ง → ดึงขึ้น ตอนนี้บนเข็มมี <strong>3 ห่วง</strong></p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>YO → ดึงผ่าน 2 ห่วงแรก</h3></div>
+                <p style="color:var(--text-secondary);">พาดด้าย → ดึงผ่าน 2 ห่วง ตอนนี้เหลือ <strong>2 ห่วง</strong> บนเข็ม</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>YO → ดึงผ่าน 2 ห่วงที่เหลือ</h3></div>
+                <p style="color:var(--text-secondary);">พาดด้ายอีกครั้ง → ดึงผ่าน 2 ห่วงที่เหลือ = dc สำเร็จ สังเกตความสูงที่มากกว่า sc และ hdc</p>
+            </div>
+
+            <div class="stitch-demo">
+                <div class="stitch-card">
+                    <div class="icon">📏</div>
+                    <h5><span class="abbr-badge">sc</span> Single Crochet</h5>
+                    <p>สูง 1 ห่วง | แน่น | ใช้ Turning Chain 1</p>
+                </div>
+                <div class="stitch-card">
+                    <div class="icon">📏</div>
+                    <h5><span class="abbr-badge">hdc</span> Half Double</h5>
+                    <p>สูง 1.5 ห่วง | กลาง | ใช้ Turning Chain 2</p>
+                </div>
+                <div class="stitch-card">
+                    <div class="icon">📏</div>
+                    <h5><span class="abbr-badge">dc</span> Double Crochet</h5>
+                    <p>สูง 2 ห่วง | โปร่ง | ใช้ Turning Chain 3</p>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 8. Turning Chain -->
+            <h2 id="turning" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🔄 ขั้นที่ 8: การขึ้นรอบใหม่ (Turning Chain)</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">เมื่อสิ้นสุดแต่ละแถว ต้องถัก Turning Chain เพื่อยกระดับให้เท่ากับลายถักในแถวถัดไป แล้วหมุนชิ้นงาน 180 องศา</p>
+            <table class="pattern-table">
+                <thead><tr><th>ลาย</th><th>Turning Chain</th><th>นับ TC เป็นลายแรกหรือไม่?</th></tr></thead>
+                <tbody>
+                    <tr><td>sc</td><td>ch 1</td><td>ไม่นับ (แทงเข็มที่ห่วงแรกเลย)</td></tr>
+                    <tr><td>hdc</td><td>ch 2</td><td>นับเป็น hdc แรก (ข้ามห่วงแรก)</td></tr>
+                    <tr><td>dc</td><td>ch 3</td><td>นับเป็น dc แรก (ข้ามห่วงแรก)</td></tr>
+                </tbody>
+            </table>
+            <div class="warn-box">
+                <div class="warn-title">⚠️ ขอบชิ้นงานหายไปทีละห่วง?</div>
+                <p style="color:var(--text-secondary);margin:0;">มักเกิดจากการลืมถักลงในห่วงแรกของแถว (ข้ามไป) หรือถักเกิน (ถักลงใน Turning Chain ด้วย) ให้ตรวจสอบจำนวนห่วงหลังทุกแถว</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 9. อ่านแพทเทิร์น -->
+            <h2 id="reading" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">📖 ขั้นที่ 9: วิธีอ่านแพทเทิร์นโครเชต์</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">แพทเทิร์นโครเชต์มีสัญลักษณ์เฉพาะ เมื่อเข้าใจแล้วอ่านได้ทุกแพทเทิร์นในโลก</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">*</span><h3>เครื่องหมาย * (Asterisk) = ทำซ้ำ</h3></div>
+                <p style="color:var(--text-secondary);"><code>*sc 2, inc* ซ้ำ 6 ครั้ง</code> หมายความว่า ทำ "sc 2 แล้ว inc 1" ซ้ำ 6 รอบ รวม 18 st</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">( )</span><h3>วงเล็บ = ถักทุกอย่างในวงเล็บลงในห่วงเดียวกัน</h3></div>
+                <p style="color:var(--text-secondary);"><code>(dc, ch 2, dc) ใน st เดียวกัน</code> หมายความว่า ถัก dc, ch 2, dc ทั้งสามอย่างลงในห่วงเดียวกัน</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">[ ]</span><h3>วงเล็บก้ามปู = จำนวนห่วงทั้งหมดในรอบนั้น</h3></div>
+                <p style="color:var(--text-secondary);"><code>R5: sc 3, inc [24]</code> ตัวเลขใน [ ] บอกว่าเมื่อถักรอบนี้จบ ควรมีห่วงทั้งหมด 24 ห่วง ใช้ตรวจสอบว่านับถูกหรือเปล่า</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 10. Gauge -->
+            <h2 id="gauge" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">📏 ขั้นที่ 10: การวัด Gauge และปรับขนาด</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">Gauge คือจำนวนห่วงต่อนิ้วหรือเซนติเมตร สำคัญมากสำหรับงานเสื้อผ้าที่ต้องได้ขนาดแน่นอน</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>ถักผืนทดสอบ (Gauge Swatch)</h3></div>
+                <p style="color:var(--text-secondary);">ถัก sc หรือลายที่แพทเทิร์นระบุ ขนาดอย่างน้อย 15 × 15 cm วางราบบนโต๊ะ วัดจากห่วงที่ 5 ถึงห่วงที่ 15 (ไม่นับขอบ)</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>ปรับเข็มถ้า Gauge ไม่ตรง</h3></div>
+                <p style="color:var(--text-secondary);"><strong>ถ้าห่วงใหญ่เกินไป</strong> → ใช้เข็มเล็กลง 1 ไซส์<br><strong>ถ้าห่วงเล็กเกินไป</strong> → ใช้เข็มใหญ่ขึ้น 1 ไซส์</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 11. ปิดงาน -->
+            <h2 id="finish" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🎀 ขั้นที่ 11: การปิดงานและซ่อนปลายด้าย</h2>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>Fasten Off — ปิดงาน</h3></div>
+                <p style="color:var(--text-secondary);">ตัดด้ายเหลือยาว 15–20 cm → ดึงปลายด้ายผ่านห่วงสุดท้ายบนเข็ม → ดึงให้แน่น ปมจะล็อคไม่หลุด</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>ซ่อนปลายด้าย (Weave In Ends)</h3></div>
+                <p style="color:var(--text-secondary);">ร้อยปลายด้ายเข้าเข็มปลายทื่อ → เย็บซิกแซกเข้าในเนื้อผ้าประมาณ 5–6 ห่วง → หันทิศทางสลับ → เย็บซิกแซกอีกครั้ง → ตัดด้ายชิดผ้า ปลายด้ายจะซ่อนอยู่ภายในและไม่หลุด</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 12. ชิ้นงานแรก -->
+            <h2 id="practice" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🧶 ขั้นที่ 12: ชิ้นงานฝึกหัดแรก — ที่รองแก้วสี่เหลี่ยม</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">ชิ้นงานง่ายๆ ที่ใช้งานได้จริง ฝึกทักษะ sc และการขึ้นรอบใหม่ คาดว่าใช้เวลา 30–60 นาที</p>
+            <div class="step-box">
+                <p style="color:var(--text-secondary);"><strong>อุปกรณ์:</strong> ไหม Worsted + เข็ม 4.5 มม.<br>
+                <strong>ขนาดเป้าหมาย:</strong> ประมาณ 10 × 10 cm</p>
+                <p style="color:var(--text-secondary);"><strong>วิธีทำ:</strong></p>
+                <ol style="color:var(--text-secondary);line-height:2;padding-left:1.5rem;">
+                    <li>ถัก <strong>ch 12</strong> (11 ห่วง + 1 Turning Chain)</li>
+                    <li><strong>แถวที่ 1:</strong> sc ลงใน ch ที่ 2 จากเข็ม และทุกๆ ch ถัดไป = 11 sc</li>
+                    <li>ตอนสิ้นแถว: ch 1 หมุนชิ้นงาน</li>
+                    <li><strong>แถวที่ 2–10:</strong> sc ทุกห่วงจนสุดแถว ch 1 หมุน ทำซ้ำ 9 ครั้ง</li>
+                    <li>Fasten off ซ่อนปลายด้าย</li>
+                </ol>
+            </div>
+            <div class="tip-box">
+                <div class="tip-title">🌟 ยินดีด้วย! คุณถักชิ้นงานแรกสำเร็จแล้ว!</div>
+                <p style="color:var(--text-secondary);margin:0;">ชิ้นงานอาจไม่สมบูรณ์แบบในครั้งแรก แต่นั่นคือกระบวนการเรียนรู้ที่ถูกต้อง ฝึกซ้ำๆ จนมั่นใจแล้วก็ไปลองบทเรียนถัดไป: <a href="article_amigurumi.html" style="color:var(--accent);">สอนถักตุ๊กตา Amigurumi</a> ได้เลยครับ!</p>
+            </div>
+
+            <!-- Progress Button -->
+            <div style="margin-top:3rem;text-align:center;">
+                <button id="mark-read-btn" class="btn btn-primary" data-article-id="article_1" style="font-size:1.2rem;padding:1rem 3rem;border-radius:50px;">
+                    <i class="fas fa-check-circle"></i> ทำเครื่องหมายว่าอ่านจบแล้ว ✅
+                </button>
+            </div>
+
+            <div style="margin-top:2rem;border-top:1px solid var(--border);padding-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+                <a href="index.html#guide-section" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> กลับสู่คลังความรู้</a>
+                <a href="article_amigurumi.html" class="btn btn-secondary">บทเรียนถัดไป: ถักตุ๊กตา Amigurumi <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Crochet<span>Studio</span></h2>
+                <p>เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งแรงบันดาลใจ สำหรับคนรักงานถักโครเชต์และนิตติ้ง</p>
+                <div class="socials">
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>คลังความรู้</h4>
+                <ul>
+                    <li><a href="article.html">พื้นฐานโครเชต์</a></li>
+                    <li><a href="article_amigurumi.html">การถักตุ๊กตา</a></li>
+                    <li><a href="article_yarn.html">คู่มือไหมพรม</a></li>
+                    <li><a href="article_hooks.html">คู่มือเข็มถัก</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>แพทเทิร์น</h4>
+                <ul>
+                    <li><a href="patterns.html">หมวก & กระเป๋า</a></li>
+                    <li><a href="patterns.html">เสื้อผ้า</a></li>
+                    <li><a href="patterns.html">ของตกแต่งบ้าน</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ติดต่อเรา</h4>
+                <ul>
+                    <li><a href="about.html">เรื่องราวของเรา</a></li>
+                    <li><a href="contact.html">ส่งข้อความหาเรา</a></li>
+                    <li><a href="faq.html">คำถามที่พบบ่อย</a></li>
+                    <li><a href="policy.html">นโยบายความเป็นส่วนตัว</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Crochet Studio. Crafted with absolute perfection.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=3.0"></script>
+</body>
+</html>
