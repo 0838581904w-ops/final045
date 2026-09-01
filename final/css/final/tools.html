@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Crochet Tools - แอปพลิเคชันผู้ช่วยถักโครเชต์ เครื่องมือนับแถว และคำนวณปริมาณไหมพรม">
+    <title>เครื่องมือช่วยถัก (Digital Tools) - CrochetStudio</title>
+    <link rel="stylesheet" href="css/style.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto 4rem auto; padding: 0 2rem; }
+        .tool-card { background: var(--bg-secondary); border-radius: 20px; padding: 2.5rem; box-shadow: var(--shadow-md); border: 1px solid var(--border); position: relative; overflow: hidden; }
+        
+        /* Row Counter Styles */
+        .counter-display { text-align: center; margin: 2rem 0; }
+        .counter-number { font-size: 6rem; font-weight: bold; color: var(--accent); font-family: var(--font-heading); line-height: 1; }
+        .counter-controls { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; }
+        .btn-circle { width: 60px; height: 60px; border-radius: 50%; font-size: 1.5rem; border: none; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: all 0.2s; }
+        .btn-minus { background: var(--bg-primary); color: var(--text-primary); border: 2px solid var(--border); }
+        .btn-plus { background: var(--accent); color: white; transform: scale(1.1); box-shadow: 0 4px 15px rgba(184, 139, 125, 0.4); }
+        .btn-plus:active { transform: scale(1); }
+        
+        /* Calculator Styles */
+        .calc-form { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+        .form-group label { font-weight: bold; color: var(--text-primary); }
+        .form-group select, .form-group input { padding: 0.8rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); font-size: 1rem; }
+        .calc-result { margin-top: 1.5rem; padding: 1.5rem; background: var(--bg-primary); border-radius: 12px; text-align: center; border: 2px dashed var(--accent); display: none; }
+        .calc-result.active { display: block; animation: fadeIn 0.5s; }
+        
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><h1>Crochet<span>Studio</span></h1></a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="tools.html" class="active">เครื่องมือช่วยถัก <i class="fas fa-magic" style="font-size: 0.8em;"></i></a></li>
+                <li><a href="index.html#guide-section">คลังความรู้</a></li>
+                <li><a href="patterns.html">แพทเทิร์น</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero" style="min-height: 35vh; padding-top: 8rem; padding-bottom: 2rem;">
+        <div class="hero-content reveal">
+            <span class="hero-tag">Digital Assistants</span>
+            <h2 style="font-size: 3rem;">เครื่องมืออัจฉริยะ</h2>
+            <p>เปลี่ยนสมาร์ทโฟนหรือคอมพิวเตอร์ของคุณให้เป็นผู้ช่วยถักส่วนตัว</p>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="tools-grid">
+            
+            <!-- Tool 1: Smart Row Counter -->
+            <div class="tool-card reveal">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3 style="margin: 0; color: var(--text-primary);"><i class="fas fa-list-ol" style="color: var(--accent);"></i> เครื่องมือนับแถว</h3>
+                    <button onclick="resetCounter()" style="background:none; border:none; color:var(--text-secondary); cursor:pointer; text-decoration:underline;">เริ่มใหม่ (Reset)</button>
+                </div>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9rem;">(ข้อมูลจะถูกบันทึกอัตโนมัติ ปิดเว็บแล้วเปิดใหม่เลขไม่หาย!)</p>
+                
+                <div class="counter-display">
+                    <div class="counter-number" id="row-count">0</div>
+                    <div style="color: var(--text-secondary); font-weight: bold; letter-spacing: 2px;">ROWS</div>
+                </div>
+                
+                <div class="counter-controls">
+                    <button class="btn-circle btn-minus" onclick="updateCounter(-1)"><i class="fas fa-minus"></i></button>
+                    <button class="btn-circle btn-plus" onclick="updateCounter(1)"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+
+            <!-- Tool 2: Yarn Calculator -->
+            <div class="tool-card reveal" style="animation-delay: 0.2s;">
+                <h3 style="margin: 0; color: var(--text-primary);"><i class="fas fa-calculator" style="color: var(--accent);"></i> เครื่องคำนวณไหมพรม</h3>
+                <p style="color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.9rem;">คำนวณปริมาณไหมพรมที่ต้องใช้ (โดยประมาณ)</p>
+                
+                <div class="calc-form">
+                    <div class="form-group">
+                        <label>เลือกประเภทชิ้นงาน:</label>
+                        <select id="project-type">
+                            <option value="150">หมวกบีนนี่ (Beanie Hat)</option>
+                            <option value="250">ผ้าพันคอ (Scarf)</option>
+                            <option value="1200">เสื้อสเวตเตอร์ (Sweater)</option>
+                            <option value="2500">ผ้าห่ม 1.5 เมตร (Blanket)</option>
+                            <option value="80">ตุ๊กตาขนาดเล็ก 15 ซม. (Amigurumi)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>ความยาวไหมพรมต่อ 1 ม้วน (เมตร):</label>
+                        <input type="number" id="yarn-length" placeholder="เช่น 150 (ดูจากป้ายไหมพรม)" value="150">
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="calculateYarn()" style="width: 100%;"><i class="fas fa-magic"></i> คำนวณทันที</button>
+                </div>
+                
+                <div class="calc-result" id="calc-result">
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">คุณต้องใช้ไหมพรมทั้งหมดประมาณ</p>
+                    <h3 style="font-size: 2rem; color: var(--accent); margin: 0;"><span id="result-skeins">0</span> ม้วน</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.5rem;">(<span id="result-meters">0</span> เมตร)</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        // --- Smart Row Counter Logic ---
+        let currentRow = localStorage.getItem('crochet_row_counter') ? parseInt(localStorage.getItem('crochet_row_counter')) : 0;
+        const rowDisplay = document.getElementById('row-count');
+        
+        function updateDisplay() {
+            rowDisplay.innerText = currentRow;
+        }
+        
+        function updateCounter(change) {
+            currentRow += change;
+            if (currentRow < 0) currentRow = 0; // Prevent negative rows
+            localStorage.setItem('crochet_row_counter', currentRow);
+            updateDisplay();
+            
+            // Haptic feedback simulation & visual pop
+            rowDisplay.style.transform = change > 0 ? 'scale(1.2)' : 'scale(0.8)';
+            setTimeout(() => {
+                rowDisplay.style.transform = 'scale(1)';
+            }, 150);
+        }
+        
+        function resetCounter() {
+            if(confirm('คุณแน่ใจหรือไม่ว่าต้องการเริ่มนับใหม่จาก 0?')) {
+                currentRow = 0;
+                localStorage.setItem('crochet_row_counter', currentRow);
+                updateDisplay();
+            }
+        }
+        
+        // Initialize counter
+        updateDisplay();
+        rowDisplay.style.transition = 'transform 0.15s ease-out';
+
+        // --- Yarn Calculator Logic ---
+        function calculateYarn() {
+            const requiredMeters = parseInt(document.getElementById('project-type').value);
+            const metersPerSkein = parseInt(document.getElementById('yarn-length').value);
+            
+            if(!metersPerSkein || metersPerSkein <= 0) {
+                alert('กรุณาระบุความยาวไหมพรมต่อ 1 ม้วนให้ถูกต้อง');
+                return;
+            }
+            
+            // Calculate skeins needed (round up using Math.ceil)
+            const skeinsNeeded = Math.ceil(requiredMeters / metersPerSkein);
+            
+            // Animate and show result
+            document.getElementById('result-skeins').innerText = skeinsNeeded;
+            document.getElementById('result-meters').innerText = requiredMeters;
+            
+            const resultBox = document.getElementById('calc-result');
+            resultBox.classList.remove('active');
+            void resultBox.offsetWidth; // trigger reflow
+            resultBox.classList.add('active');
+        }
+    </script>
+</body>
+</html>

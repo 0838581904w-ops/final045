@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พจนานุกรมสัญลักษณ์ - CrochetStudio V2</title>
+    <link rel="stylesheet" href="css/style.css?v=3.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .glossary-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            border-radius: 50px;
+            border: 2px solid var(--border);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            transition: all var(--transition-smooth);
+        }
+        .search-bar:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px rgba(255, 126, 103, 0.2);
+        }
+        .term-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .term-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            transition: all var(--transition-smooth);
+        }
+        .term-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: var(--shadow-sm);
+        }
+        .term-abbr {
+            font-size: 2rem;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .term-abbr .lang-tag {
+            font-size: 0.8rem;
+            background: var(--bg-primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            color: var(--text-secondary);
+        }
+        .term-name {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .term-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+            display: none;
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><h1>Crochet<span>Studio</span></h1></a>
+        </div>
+        
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="index.html#guide-section" class="active">คลังความรู้</a></li>
+                <li><a href="patterns.html">แพทเทิร์น</a></li>
+                <li><a href="showcase.html">ผลงานชุมชน</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 35vh; padding-top: 9rem; padding-bottom: 2rem;">
+        <div class="hero-content reveal">
+            <span class="hero-tag">Dictionary</span>
+            <h2 style="font-size: 3rem;">พจนานุกรมสัญลักษณ์ (Glossary)</h2>
+            <p>ค้นหาคำศัพท์ ตัวย่อ และสัญลักษณ์ในแพทเทิร์นโครเชต์ได้ง่ายๆ ในที่เดียว</p>
+        </div>
+    </section>
+
+    <!-- Glossary Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="glossary-container reveal">
+            
+            <input type="text" id="search-input" class="search-bar" placeholder="🔍 ค้นหาคำศัพท์ เช่น X, V, sc, dc..." autocomplete="off">
+
+            <div class="term-grid" id="term-grid">
+                <!-- Terms will be populated by JS -->
+                <div class="no-results" id="no-results">
+                    <i class="fas fa-search" style="font-size: 3rem; color: var(--border); margin-bottom: 1rem;"></i>
+                    <h3>ไม่พบคำศัพท์ที่ค้นหา</h3>
+                    <p>ลองพิมพ์ตัวย่อสัญลักษณ์ไทย หรืออังกฤษดูอีกครั้ง</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Crochet Studio V2. Crafted with absolute perfection.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=3.0"></script>
+    <script>
+        const terms = [
+            { abbr: "X", name: "คธ (ควักธรรมดา)", desc: "สอดเข็มลงในหลัก พันหัวเข็ม ดึงไหมผ่าน 2 ห่วง", lang: "ไทย" },
+            { abbr: "V", name: "เพิ่มห่วง (Increase)", desc: "ถัก X 2 ครั้ง ลงในหลักเดียวกันเพื่อขยายชิ้นงาน", lang: "ไทย" },
+            { abbr: "A", name: "ลดห่วง (Decrease)", desc: "รวบ 2 หลักให้กลายเป็นหลักเดียว เพื่อทำให้ชิ้นงานเล็กลง", lang: "ไทย" },
+            { abbr: "T", name: "พคร (พันหัวเข็มครึ่งครั้ง)", desc: "พันหัวเข็ม 1 ครั้ง สอดเข็ม พันหัวเข็ม รวบดึงผ่านทั้ง 3 ห่วงรวดเดียว", lang: "ไทย" },
+            { abbr: "F", name: "พ1ค (พันหัวเข็ม 1 ครั้ง)", desc: "พันหัวเข็ม 1 ครั้ง สอดเข็ม ดึงไหมผ่านทีละ 2 ห่วง (ทำ 2 รอบ)", lang: "ไทย" },
+            { abbr: "C", name: "ลห (เลื่อนห่วง)", desc: "สอดเข็ม ดึงไหมผ่านหลัก และผ่านห่วงบนเข็มรวดเดียว ใช้สำหรับปิดจบแถว", lang: "ไทย" },
+            { abbr: "ch", name: "Chain (โซ่)", desc: "การถักห่วงโซ่พื้นฐาน มักใช้เริ่มงาน", lang: "US" },
+            { abbr: "sc", name: "Single Crochet", desc: "เทียบเท่ากับการถัก X ของแพทเทิร์นไทย", lang: "US" },
+            { abbr: "inc", name: "Increase", desc: "เทียบเท่ากับการถัก V (เพิ่มห่วง) ของแพทเทิร์นไทย", lang: "US" },
+            { abbr: "dec", name: "Decrease", desc: "เทียบเท่ากับการถัก A (ลดห่วง) ของแพทเทิร์นไทย", lang: "US" },
+            { abbr: "dc", name: "Double Crochet", desc: "เทียบเท่ากับการถัก F (พันหัวเข็ม 1 ครั้ง) ของแพทเทิร์นไทย", lang: "US" },
+            { abbr: "sl st", name: "Slip Stitch", desc: "เทียบเท่ากับการถัก C (เลื่อนห่วง) ปิดชิ้นงาน", lang: "US" }
+        ];
+
+        const grid = document.getElementById('term-grid');
+        const searchInput = document.getElementById('search-input');
+        const noResults = document.getElementById('no-results');
+
+        function renderTerms(filterText = "") {
+            // Remove existing cards
+            document.querySelectorAll('.term-card').forEach(card => card.remove());
+            
+            let count = 0;
+            const text = filterText.toLowerCase();
+
+            terms.forEach(term => {
+                if (term.abbr.toLowerCase().includes(text) || term.name.toLowerCase().includes(text) || term.desc.toLowerCase().includes(text)) {
+                    const card = document.createElement('div');
+                    card.className = 'term-card';
+                    card.innerHTML = `
+                        <div class="term-abbr">${term.abbr} <span class="lang-tag">${term.lang}</span></div>
+                        <div class="term-name">${term.name}</div>
+                        <div class="term-desc">${term.desc}</div>
+                    `;
+                    grid.insertBefore(card, noResults);
+                    count++;
+                }
+            });
+
+            if (count === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+
+        // Initial render
+        renderTerms();
+
+        // Search listener
+        searchInput.addEventListener('input', (e) => {
+            renderTerms(e.target.value);
+        });
+    </script>
+</body>
+</html>
