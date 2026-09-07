@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สอนถักตุ๊กตากระต่าย Amigurumi ครบทุกขั้นตอน - CrochetStudio</title>
+    <meta name="description" content="เรียนรู้การถักตุ๊กตา Amigurumi แบบละเอียดทุกขั้นตอน ตั้งแต่ Magic Ring, Single Crochet, การเพิ่มลดห่วง ไปจนถึงการประกอบและปักหน้า">
+    <link rel="stylesheet" href="css/style.css?v=3.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-body { max-width: 860px; margin: 0 auto; }
+        .step-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--accent);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .step-box h4 { color: var(--accent); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .step-num {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--accent); color: white;
+            font-weight: 700; font-size: 0.95rem; margin-right: 0.8rem; flex-shrink: 0;
+        }
+        .step-header { display: flex; align-items: center; margin-bottom: 0.8rem; }
+        .step-header h3 { color: var(--text-primary); font-size: 1.35rem; margin: 0; }
+        .tip-box {
+            background: linear-gradient(135deg, rgba(var(--accent-rgb, 180,120,90), 0.08), transparent);
+            border: 1px solid var(--accent);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .tip-box .tip-title { color: var(--accent); font-weight: 700; margin-bottom: 0.4rem; }
+        .warn-box {
+            background: rgba(255, 193, 7, 0.08);
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .warn-box .warn-title { color: #e6a800; font-weight: 700; margin-bottom: 0.4rem; }
+        .pattern-table {
+            width: 100%; border-collapse: collapse; margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+        .pattern-table th {
+            background: var(--accent); color: white;
+            padding: 0.7rem 1rem; text-align: left;
+        }
+        .pattern-table td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+        .pattern-table tr:last-child td { border-bottom: none; }
+        .pattern-table tr:nth-child(even) td { background: rgba(0,0,0,0.03); }
+        .materials-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem; margin: 1.5rem 0;
+        }
+        .material-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.2rem;
+            display: flex; align-items: flex-start; gap: 0.8rem;
+        }
+        .material-icon { font-size: 1.8rem; }
+        .material-card h5 { font-size: 0.95rem; margin: 0 0 0.3rem; color: var(--text-primary); }
+        .material-card p { font-size: 0.85rem; margin: 0; color: var(--text-secondary); line-height: 1.4; }
+        .section-divider {
+            border: none; border-top: 2px dashed var(--border);
+            margin: 2.5rem 0;
+        }
+        .abbr-badge {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            margin-right: 0.4rem;
+        }
+        .toc {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .toc h4 { color: var(--accent); margin-bottom: 1rem; font-size: 1.1rem; }
+        .toc ol { margin: 0; padding-left: 1.5rem; }
+        .toc li { margin-bottom: 0.4rem; }
+        .toc a { color: var(--text-secondary); text-decoration: none; transition: color 0.2s; }
+        .toc a:hover { color: var(--accent); }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <a href="index.html"><h1>Crochet<span>Studio</span></h1></a>
+        </div>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="index.html#guide-section" class="active">คลังความรู้</a></li>
+                <li><a href="patterns.html">แพทเทิร์น</a></li>
+                <li><a href="showcase.html">ผลงานชุมชน</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height: 38vh; padding-top: 9rem; padding-bottom: 2rem;">
+        <div class="hero-content reveal">
+            <span class="hero-tag">🐰 Amigurumi Step-by-Step</span>
+            <h2 style="font-size: 2.8rem;">สอนถักตุ๊กตากระต่าย Amigurumi<br>ครบทุกขั้นตอน ตั้งแต่เริ่มต้น</h2>
+            <p>ระดับ: มือใหม่ | เวลาที่ใช้: ~4–6 ชั่วโมง | โดย CrochetStudio Master</p>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="article-body reveal">
+
+            <img loading="lazy" src="images/article_2.png" alt="ตุ๊กตากระต่าย Amigurumi" style="width:100%;height:380px;border-radius:20px;object-fit:cover;margin-bottom:2rem;">
+
+            <!-- บทนำ -->
+            <p style="font-size:1.15rem;color:var(--text-secondary);margin-bottom:1.5rem;line-height:2;">
+                <strong style="color:var(--text-primary);">"Amigurumi"</strong> (อะมิกุรุมิ) มาจากภาษาญี่ปุ่น แปลว่า "ตุ๊กตาที่ถักด้วยไหมพรม" ศิลปะนี้มีต้นกำเนิดจากญี่ปุ่นในยุค 1980s และแพร่หลายไปทั่วโลก 
+                จุดเด่นคือชิ้นงานน่ารัก ขนาดพอดีมือ และสามารถทำได้ในเวลาไม่กี่ชั่วโมง บทความนี้จะสอนทุกอย่างตั้งแต่ศูนย์ แม้ไม่เคยถักมาก่อนก็ทำได้!
+            </p>
+
+            <!-- สารบัญ -->
+            <div class="toc">
+                <h4><i class="fas fa-list-ul"></i> สารบัญบทเรียน</h4>
+                <ol>
+                    <li><a href="#materials">อุปกรณ์ที่ต้องเตรียม</a></li>
+                    <li><a href="#abbreviations">คำย่อในแพทเทิร์น</a></li>
+                    <li><a href="#magic-ring">การทำ Magic Ring (MR)</a></li>
+                    <li><a href="#single-crochet">ลาย Single Crochet (sc) ขั้นตอนละเอียด</a></li>
+                    <li><a href="#increase">การเพิ่มห่วง (Increase / inc)</a></li>
+                    <li><a href="#decrease">การลดห่วง (Invisible Decrease / dec)</a></li>
+                    <li><a href="#head">ถักหัวกระต่าย — Round by Round</a></li>
+                    <li><a href="#body">ถักลำตัว — Round by Round</a></li>
+                    <li><a href="#ear">ถักหู + แขน + ขา</a></li>
+                    <li><a href="#stuffing">การยัดใยและปิดชิ้นงาน</a></li>
+                    <li><a href="#assembly">การเย็บประกอบ</a></li>
+                    <li><a href="#face">การปักหน้า + ตกแต่ง</a></li>
+                    <li><a href="#tips">เคล็ดลับมืออาชีพ</a></li>
+                </ol>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 1. อุปกรณ์ -->
+            <h2 id="materials" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🧺 ขั้นที่ 1: อุปกรณ์ที่ต้องเตรียม</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">การเตรียมอุปกรณ์ให้ครบถ้วนก่อนเริ่มถักเป็นสิ่งสำคัญมาก เพราะถ้าอุปกรณ์ไม่ครบอาจทำให้ต้องหยุดกลางคัน</p>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">🧶</div>
+                    <div>
+                        <h5>ไหมพรมคอตตอน</h5>
+                        <p>ใช้ไหมพรม 100% Cotton เส้นเบอร์ 2–3 (ฉลากแนะนำเข็ม 2.5–3.5 มม.) สีหลัก: ครีม/ขาว สำหรับตัวกระต่าย และสีชมพูอ่อนสำหรับหูด้านใน</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🪝</div>
+                    <div>
+                        <h5>เข็มโครเชต์</h5>
+                        <p>ขนาด <strong>2.5 มม.</strong> (สำคัญมาก! ใช้เข็มเล็กกว่าที่ฉลากแนะนำ 1 ไซส์ เพื่อให้เนื้อผ้าแน่น ใยไม่โผล่)</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">☁️</div>
+                    <div>
+                        <h5>ใยสังเคราะห์ (Stuffing)</h5>
+                        <p>Polyester Fiberfill ใช้ยัดตัวตุ๊กตา หาซื้อได้ที่ร้านขายอุปกรณ์งานฝีมือหรือออนไลน์ ราคาไม่แพง</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">👁️</div>
+                    <div>
+                        <h5>ตาแก้ว/ตาพลาสติก</h5>
+                        <p>ขนาด 8–10 มม. มีก้านล็อค (Safety Eyes) ควรใส่ก่อนยัดใย ถ้าทำให้เด็กเล็กให้ปักตาด้วยด้ายดำแทน</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">🧵</div>
+                    <div>
+                        <h5>เข็มเย็บผ้า (Tapestry Needle)</h5>
+                        <p>เข็มปลายทื่อ ช่องใหญ่ ใช้เย็บประกอบชิ้นส่วน ปักหน้า และร้อยปิดชิ้นงาน</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">📍</div>
+                    <div>
+                        <h5>เครื่องหมายห่วง (Stitch Marker)</h5>
+                        <p>ใช้หนีบที่ห่วงแรกของแต่ละรอบ เพื่อนับรอบได้ง่าย ถ้าไม่มีใช้ด้ายสีต่างๆ หนีบแทนได้</p>
+                    </div>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">✂️</div>
+                    <div>
+                        <h5>กรรไกร + เข็มหมุด</h5>
+                        <p>กรรไกรสำหรับตัดเส้นด้าย และเข็มหมุดสำหรับหมุดชิ้นส่วนก่อนเย็บ</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 2. คำย่อ -->
+            <h2 id="abbreviations" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">📖 ขั้นที่ 2: คำย่อที่ใช้ในแพทเทิร์น</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">แพทเทิร์นโครเชต์ใช้ตัวย่อเพื่อประหยัดเนื้อที่ ควรจำให้ขึ้นใจก่อนเริ่มถัก:</p>
+            <table class="pattern-table">
+                <thead>
+                    <tr><th>ตัวย่อ</th><th>ชื่อเต็ม (ภาษาอังกฤษ)</th><th>ความหมาย</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="abbr-badge">MR</span></td><td>Magic Ring</td><td>วงกลมเวทมนตร์ — จุดเริ่มต้นของชิ้นงานกลม</td></tr>
+                    <tr><td><span class="abbr-badge">ch</span></td><td>Chain</td><td>ห่วงโซ่ — ถักห่วงต่อเนื่องเป็นสาย</td></tr>
+                    <tr><td><span class="abbr-badge">sc</span></td><td>Single Crochet</td><td>ลายเดี่ยว — ลายพื้นฐานที่ใช้มากที่สุดใน Amigurumi</td></tr>
+                    <tr><td><span class="abbr-badge">inc</span></td><td>Increase</td><td>เพิ่มห่วง = ถัก sc 2 ครั้งในช่องเดียวกัน</td></tr>
+                    <tr><td><span class="abbr-badge">dec</span></td><td>Invisible Decrease</td><td>ลดห่วง = รวม 2 ห่วงเป็น 1 แบบไม่เห็นรอย</td></tr>
+                    <tr><td><span class="abbr-badge">sl st</span></td><td>Slip Stitch</td><td>ห่วงลื่น — ใช้เชื่อมจุดหรือปิดรอบ</td></tr>
+                    <tr><td><span class="abbr-badge">R / Rnd</span></td><td>Round</td><td>รอบ — การถักครบหนึ่งรอบวง</td></tr>
+                    <tr><td><span class="abbr-badge">st</span></td><td>Stitch</td><td>ห่วง/ลาย — จำนวนห่วงทั้งหมดในรอบนั้น</td></tr>
+                    <tr><td><span class="abbr-badge">BLO</span></td><td>Back Loop Only</td><td>ถักเฉพาะห่วงด้านหลัง — สร้างสันนูน</td></tr>
+                    <tr><td><span class="abbr-badge">FLO</span></td><td>Front Loop Only</td><td>ถักเฉพาะห่วงด้านหน้า</td></tr>
+                    <tr><td><span class="abbr-badge">fasten off</span></td><td>Fasten Off</td><td>ปิดงาน — ตัดด้ายและร้อยปิด</td></tr>
+                </tbody>
+            </table>
+
+            <hr class="section-divider">
+
+            <!-- 3. Magic Ring -->
+            <h2 id="magic-ring" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">✨ ขั้นที่ 3: การทำ Magic Ring (MR) — วงกลมเวทมนตร์</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1.2rem;">Magic Ring คือเทคนิคเริ่มต้นสำหรับชิ้นงานที่ถักเป็นวงกลม ทำให้รูตรงกลางปิดสนิท ไม่มีช่องว่างเหมือนการขึ้นห่วงโซ่ธรรมดา</p>
+
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>สร้างวงไหมพรม</h3></div>
+                <p style="color:var(--text-secondary);">จับเส้นด้ายด้วยมือซ้าย พันเส้นด้ายวนรอบนิ้วชี้และนิ้วกลาง <strong>1 รอบ</strong> ปลายด้ายยาวควรอยู่ด้านบน ปลายที่ต่อกับม้วนอยู่ด้านล่าง</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>แทงเข็มผ่านวง</h3></div>
+                <p style="color:var(--text-secondary);">จับเข็มโครเชต์ด้วยมือขวา แทงเข็มผ่านวงที่สร้างขึ้น จากด้านบนลงด้านล่าง</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>เกี่ยวด้ายขึ้น (Yarn Over)</h3></div>
+                <p style="color:var(--text-secondary);">ใช้เข็มเกี่ยวเส้นด้ายปลายม้วน (ด้านล่าง) ดึงขึ้นมาผ่านวง ตอนนี้จะมีห่วง 1 ห่วงอยู่บนเข็ม นี่คือ <strong>Chain 1</strong> (ห่วงยก)</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">4</span><h3>ถัก sc ในวง Magic Ring</h3></div>
+                <p style="color:var(--text-secondary);">แทงเข็มผ่านวงอีกครั้ง → เกี่ยวด้าย → ดึงขึ้น (ตอนนี้บนเข็มมี 2 ห่วง) → เกี่ยวด้ายอีกครั้ง → ดึงผ่านทั้ง 2 ห่วงพร้อมกัน = สำเร็จ sc 1 ครั้ง ทำซ้ำจนครบ 6 ครั้ง</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">5</span><h3>ดึงปิดวง</h3></div>
+                <p style="color:var(--text-secondary);">จับปลายด้ายยาว ค่อยๆ ดึงออก วงกลมตรงกลางจะปิดสนิท ตอนนี้จะมี <strong>6 sc</strong> เรียงเป็นวงเล็กๆ สวยงาม</p>
+            </div>
+
+            <div class="tip-box">
+                <div class="tip-title">💡 เคล็ดลับ: ทำ MR ไม่ติด?</div>
+                <p style="color:var(--text-secondary);margin:0;">ฝึกบนนิ้วที่ใหญ่กว่า เช่น นิ้วหัวแม่มือ จะง่ายกว่าสำหรับมือใหม่ หรือลองดูวิดีโอบน YouTube ค้นหา "Magic Ring crochet tutorial slow" เพื่อดูภาพเคลื่อนไหว</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 4. Single Crochet -->
+            <h2 id="single-crochet" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🪡 ขั้นที่ 4: ลาย Single Crochet (sc) — ทีละขั้น</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1.2rem;">sc คือลายพื้นฐานที่สุดและใช้มากที่สุดใน Amigurumi สั้น แน่น แข็งแรง เหมาะสำหรับงานตุ๊กตา</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>แทงเข็มผ่านห่วงถัดไป</h3></div>
+                <p style="color:var(--text-secondary);">จับงานด้วยมือซ้าย แทงเข็มผ่านห่วงบนชิ้นงานจาก <strong>ด้านหน้าไปด้านหลัง</strong> เข็มควรผ่านห่วงทั้ง 2 เส้น (ห่วงหน้าและหลัง) ยกเว้นกรณีที่แพทเทิร์นระบุ BLO หรือ FLO</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>Yarn Over (YO) — พาด/เกี่ยวด้าย</h3></div>
+                <p style="color:var(--text-secondary);">พาดเส้นด้ายผ่านเข็มจากซ้ายไปขวา (หรือพันรอบเข็ม 1 ครั้ง) ตอนนี้บนเข็มจะมี <strong>2 ห่วง</strong></p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>ดึงขึ้น (Pull Through)</h3></div>
+                <p style="color:var(--text-secondary);">ดึงด้ายที่เกี่ยวไว้ขึ้นมาผ่านห่วงที่แทงเข็มอยู่ ตอนนี้บนเข็มมี <strong>2 ห่วง</strong> (ห่วงเดิมกับห่วงใหม่)</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">4</span><h3>YO แล้วดึงผ่าน 2 ห่วง</h3></div>
+                <p style="color:var(--text-secondary);">พาดด้ายผ่านเข็มอีกครั้ง → ดึงผ่าน 2 ห่วงที่อยู่บนเข็มพร้อมกัน ตอนนี้เหลือ <strong>1 ห่วง</strong> บนเข็ม = สำเร็จ sc 1 ครั้ง! 🎉</p>
+            </div>
+
+            <div class="warn-box">
+                <div class="warn-title">⚠️ ข้อควรระวังสำหรับมือใหม่</div>
+                <ul style="color:var(--text-secondary);margin:0;padding-left:1.2rem;">
+                    <li>อย่าดึงด้ายแน่นเกินไป ห่วงควรเลื่อนบนเข็มได้อย่างสบาย</li>
+                    <li>อย่าดึงหลวมเกินไป จะทำให้เนื้องานไม่แน่น ใยโผล่ออกมา</li>
+                    <li>ความตึงสม่ำเสมอ (Gauge) คือกุญแจสำคัญ ฝึกบ่อยๆ จะดีขึ้นเอง</li>
+                </ul>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 5. Increase -->
+            <h2 id="increase" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">➕ ขั้นที่ 5: การเพิ่มห่วง (Increase / inc)</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1.2rem;">การ Increase ทำให้ชิ้นงานขยายกว้างขึ้น ใช้สำหรับส่วนที่ต้องการให้ป่องออก เช่น หัว ลำตัว</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">•</span><h3>วิธีทำ: ถัก sc ลงในช่องเดียวกัน 2 ครั้ง</h3></div>
+                <p style="color:var(--text-secondary);">แทงเข็มลงในห่วงเดิม → ถัก sc ปกติ 1 ครั้ง → <strong>แทงเข็มลงในห่วงเดิมอีกครั้ง</strong> → ถัก sc อีก 1 ครั้ง = inc เสร็จสิ้น รอบนี้จะได้ 2 sc จากห่วงเดิม 1 ห่วง</p>
+            </div>
+            <div class="tip-box">
+                <div class="tip-title">💡 ตัวอย่าง: inc ทุกห่วง</div>
+                <p style="color:var(--text-secondary);margin:0;">ถ้าแพทเทิร์นบอกว่า <code>*inc* 6 ครั้ง</code> หมายความว่า ถัก inc ทุกห่วง ทำซ้ำ 6 ครั้ง จะได้ 12 sc ในรอบนั้น</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 6. Decrease -->
+            <h2 id="decrease" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">➖ ขั้นที่ 6: Invisible Decrease (dec) — ลดห่วงแบบไม่เห็นรอย</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1.2rem;">การ decrease ทั่วไปจะสร้างรอยนูนที่มองเห็นได้ แต่ Invisible Decrease จะทำให้รอยลดเรียบสวยงาม เหมาะมากสำหรับงาน Amigurumi</p>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>แทงเข็มผ่านห่วงหน้าเท่านั้น (Front Loop)</h3></div>
+                <p style="color:var(--text-secondary);">แทงเข็มผ่าน <strong>ห่วงหน้า (Front Loop)</strong> ของห่วงแรก โดยไม่ผ่านห่วงหลัง</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>แทงเข็มผ่านห่วงหน้าของห่วงที่สอง</h3></div>
+                <p style="color:var(--text-secondary);">ยังไม่ต้องดึงด้าย แทงเข็มต่อผ่านห่วงหน้าของห่วงถัดไปอีก 1 ห่วง ตอนนี้เข็มผ่าน Front Loop ของ 2 ห่วงพร้อมกัน</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>YO แล้วดึงผ่าน 2 ห่วง → YO ดึงผ่าน 2 ห่วง</h3></div>
+                <p style="color:var(--text-secondary);">เกี่ยวด้าย → ดึงผ่าน 2 ห่วงที่เข็มผ่านอยู่ (ตอนนี้บนเข็มมี 2 ห่วง) → เกี่ยวด้ายอีกครั้ง → ดึงผ่านทั้ง 2 ห่วง = dec สำเร็จ ได้ 1 sc จาก 2 ห่วงเดิม</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 7. ถักหัว -->
+            <h2 id="head" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🐰 ขั้นที่ 7: ถักหัวกระต่าย — Round by Round</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">ถักด้วยไหมสีครีม/ขาว ใช้เข็ม 2.5 มม. (เส้นด้ายสีครีม)</p>
+            <table class="pattern-table">
+                <thead><tr><th>รอบที่</th><th>วิธีถัก</th><th>จำนวน st</th></tr></thead>
+                <tbody>
+                    <tr><td>R1</td><td>MR, sc 6 ในวง (ปิดวง Magic Ring)</td><td>6</td></tr>
+                    <tr><td>R2</td><td>*inc* 6 ครั้ง (ถัก inc ทุกห่วง)</td><td>12</td></tr>
+                    <tr><td>R3</td><td>*sc 1, inc* ซ้ำ 6 ครั้ง</td><td>18</td></tr>
+                    <tr><td>R4</td><td>*sc 2, inc* ซ้ำ 6 ครั้ง</td><td>24</td></tr>
+                    <tr><td>R5</td><td>*sc 3, inc* ซ้ำ 6 ครั้ง</td><td>30</td></tr>
+                    <tr><td>R6</td><td>*sc 4, inc* ซ้ำ 6 ครั้ง</td><td>36</td></tr>
+                    <tr><td>R7–11</td><td>sc ตรงๆ ทุกห่วง (5 รอบ)</td><td>36</td></tr>
+                    <tr><td>R12</td><td>*sc 4, dec* ซ้ำ 6 ครั้ง</td><td>30</td></tr>
+                    <tr><td>R13</td><td>*sc 3, dec* ซ้ำ 6 ครั้ง</td><td>24</td></tr>
+                    <tr><td>R14</td><td><strong>ใส่ตาแก้ว (Safety Eyes)</strong> ระหว่าง R11–R12 ห่างกัน 8–10 ห่วง แล้วถัก *sc 2, dec* ซ้ำ 6 ครั้ง</td><td>18</td></tr>
+                    <tr><td>R15</td><td>*sc 1, dec* ซ้ำ 6 ครั้ง</td><td>12</td></tr>
+                    <tr><td>R16</td><td>*dec* 6 ครั้ง (ยัดใยให้แน่นก่อน)</td><td>6</td></tr>
+                    <tr><td>จบ</td><td>Fasten off ร้อยปิดรู</td><td>–</td></tr>
+                </tbody>
+            </table>
+
+            <div class="warn-box">
+                <div class="warn-title">⚠️ อย่าลืม!</div>
+                <p style="color:var(--text-secondary);margin:0;">ใส่ <strong>Safety Eyes</strong> และ <strong>Stitch Marker</strong> ก่อนที่รูจะเล็กเกินไป เพราะพอถึง R15–16 จะใส่ไม่ได้แล้ว</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 8. ถักลำตัว -->
+            <h2 id="body" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🫶 ขั้นที่ 8: ถักลำตัว — Round by Round</h2>
+            <p style="color:var(--text-secondary);margin-bottom:1rem;">ถักด้วยไหมสีเดียวกับหัว ลำตัวจะเล็กกว่าหัวเล็กน้อย</p>
+            <table class="pattern-table">
+                <thead><tr><th>รอบที่</th><th>วิธีถัก</th><th>จำนวน st</th></tr></thead>
+                <tbody>
+                    <tr><td>R1</td><td>MR, sc 6</td><td>6</td></tr>
+                    <tr><td>R2</td><td>*inc* 6 ครั้ง</td><td>12</td></tr>
+                    <tr><td>R3</td><td>*sc 1, inc* ซ้ำ 6 ครั้ง</td><td>18</td></tr>
+                    <tr><td>R4</td><td>*sc 2, inc* ซ้ำ 6 ครั้ง</td><td>24</td></tr>
+                    <tr><td>R5–9</td><td>sc ตรงๆ ทุกห่วง (5 รอบ)</td><td>24</td></tr>
+                    <tr><td>R10</td><td>*sc 2, dec* ซ้ำ 6 ครั้ง</td><td>18</td></tr>
+                    <tr><td>R11</td><td>*sc 1, dec* ซ้ำ 6 ครั้ง</td><td>12</td></tr>
+                    <tr><td>จบ</td><td>ยัดใย Fasten off เหลือด้ายยาวไว้เย็บประกอบ</td><td>–</td></tr>
+                </tbody>
+            </table>
+
+            <hr class="section-divider">
+
+            <!-- 9. หู แขน ขา -->
+            <h2 id="ear" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">👂 ขั้นที่ 9: ถักหู + แขน + ขา</h2>
+
+            <h3 style="color:var(--text-primary);font-size:1.3rem;margin:1rem 0 0.5rem;">🐰 หู (ทำ 2 ชิ้น)</h3>
+            <p style="color:var(--text-secondary);margin-bottom:0.8rem;">ถักสีครีม (ส่วนนอก) + สีชมพูอ่อน (ส่วนใน)</p>
+            <table class="pattern-table">
+                <thead><tr><th>รอบที่</th><th>วิธีถัก (สีครีม)</th><th>จำนวน st</th></tr></thead>
+                <tbody>
+                    <tr><td>R1</td><td>MR, sc 4</td><td>4</td></tr>
+                    <tr><td>R2</td><td>*inc* 4 ครั้ง</td><td>8</td></tr>
+                    <tr><td>R3–8</td><td>sc ตรงๆ (6 รอบ)</td><td>8</td></tr>
+                    <tr><td>จบ</td><td>Fasten off เหลือด้ายยาวสำหรับเย็บ</td><td>–</td></tr>
+                </tbody>
+            </table>
+            <p style="color:var(--text-secondary);margin-bottom:1.5rem;">สำหรับชิ้นสีชมพู ถักเหมือนกันแต่ทำแค่ R1–R7 เสร็จแล้วนำมาเย็บซ้อนด้านหน้าหู</p>
+
+            <h3 style="color:var(--text-primary);font-size:1.3rem;margin:1rem 0 0.5rem;">💪 แขน (ทำ 2 ชิ้น)</h3>
+            <table class="pattern-table">
+                <thead><tr><th>รอบที่</th><th>วิธีถัก</th><th>จำนวน st</th></tr></thead>
+                <tbody>
+                    <tr><td>R1</td><td>MR, sc 6</td><td>6</td></tr>
+                    <tr><td>R2–7</td><td>sc ตรงๆ (6 รอบ)</td><td>6</td></tr>
+                    <tr><td>จบ</td><td>ยัดใยเล็กน้อย Fasten off เหลือด้ายยาว</td><td>–</td></tr>
+                </tbody>
+            </table>
+
+            <h3 style="color:var(--text-primary);font-size:1.3rem;margin:1rem 0 0.5rem;">🦵 ขา (ทำ 2 ชิ้น)</h3>
+            <table class="pattern-table">
+                <thead><tr><th>รอบที่</th><th>วิธีถัก</th><th>จำนวน st</th></tr></thead>
+                <tbody>
+                    <tr><td>R1</td><td>MR, sc 6</td><td>6</td></tr>
+                    <tr><td>R2</td><td>*inc* 6 ครั้ง</td><td>12</td></tr>
+                    <tr><td>R3–4</td><td>sc ตรงๆ (2 รอบ)</td><td>12</td></tr>
+                    <tr><td>R5</td><td>sc 4, *dec* 2 ครั้ง, sc 4</td><td>10</td></tr>
+                    <tr><td>R6–9</td><td>sc ตรงๆ (4 รอบ)</td><td>10</td></tr>
+                    <tr><td>จบ</td><td>ยัดใย Fasten off เหลือด้ายยาว</td><td>–</td></tr>
+                </tbody>
+            </table>
+
+            <hr class="section-divider">
+
+            <!-- 10. ยัดใย -->
+            <h2 id="stuffing" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">☁️ ขั้นที่ 10: การยัดใยและปิดชิ้นงาน</h2>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>ยัดใยให้แน่น แต่ไม่แข็งจนเกินไป</h3></div>
+                <p style="color:var(--text-secondary);">ใยควรแน่นพอที่ทรงกลมจะคงรูป แต่ถ้าแน่นเกินไปชิ้นงานจะแข็งและเข็มเย็บยาก ทดสอบโดยบีบดู ควรยืดหยุ่นเล็กน้อย</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>ปิดรูด้วย Needle (Running Stitch)</h3></div>
+                <p style="color:var(--text-secondary);">ร้อยเข็มเย็บผ้าด้วยปลายด้าย → เย็บ Running Stitch ผ่านห่วงสุดท้ายที่เหลืออยู่ 6 ห่วง → ดึงด้ายให้แน่น รูจะปิดสนิท → ผ่านด้ายเข้าไปในชิ้นงานแล้วตัด</p>
+            </div>
+            <div class="tip-box">
+                <div class="tip-title">💡 เทคนิคซ่อนปลายด้าย</div>
+                <p style="color:var(--text-secondary);margin:0;">แทงเข็มผ่านชิ้นงานไปออกอีกด้านหนึ่ง ดึงด้ายตึง ตัดชิดกับผ้า ปลายด้ายจะหดเข้าไปในชิ้นงานและมองไม่เห็น</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 11. ประกอบ -->
+            <h2 id="assembly" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🔧 ขั้นที่ 11: การเย็บประกอบชิ้นส่วน</h2>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>หมุดตำแหน่งก่อนเย็บ</h3></div>
+                <p style="color:var(--text-secondary);">ใช้เข็มหมุดหรือเข็มกลัดตำแหน่งของแต่ละชิ้นส่วนก่อนเย็บจริง เพื่อให้มองดูว่าสัดส่วนถูกต้อง ขาควรห่างเท่ากัน หูควรสมมาตร</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>เย็บขาเข้ากับลำตัว</h3></div>
+                <p style="color:var(--text-secondary);">วางขาไว้ด้านล่างของลำตัว เย็บ Whip Stitch รอบขอบ หมุนเข็มเย็บผ้าเข้าออกอย่างน้อย 2–3 รอบเพื่อความแน่นหนา ปิดด้ายซ่อนไว้ในลำตัว</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>เย็บแขนเข้ากับลำตัว</h3></div>
+                <p style="color:var(--text-secondary);">วางแขนไว้ด้านข้างลำตัว ประมาณ R4–R5 นับจากบน เย็บแบบเดียวกับขา ตรวจสอบว่าทั้งสองข้างสมมาตรกัน</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">4</span><h3>เย็บหัวเข้ากับลำตัว</h3></div>
+                <p style="color:var(--text-secondary);">วางหัวทับลำตัว ให้รอยต่อของหัว (ด้านใต้) อยู่ชนกับส่วนบนของลำตัว เย็บ Whip Stitch รอบขอบหัวทั้งวง ดึงให้แน่น</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">5</span><h3>เย็บหูเข้ากับหัว</h3></div>
+                <p style="color:var(--text-secondary);">วางหูที่ R2–R3 ของหัว ห่างกันประมาณ 6–8 ห่วง หมุดตำแหน่งก่อน มองจากด้านหน้าว่าดูสมมาตร แล้วค่อยเย็บยึด</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 12. ปักหน้า -->
+            <h2 id="face" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">😊 ขั้นที่ 12: การปักหน้า + ตกแต่ง</h2>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">1</span><h3>ปักจมูก (Nose)</h3></div>
+                <p style="color:var(--text-secondary);">ใช้ด้ายสีชมพูเข้ม ร้อยเข็มผ่านจากด้านหลังหัว ออกที่ตำแหน่งกึ่งกลางระหว่างตา R12–R13 ปักรูปตัว Y เล็กๆ หรือ V คว่ำ → แทงกลับเข้าหัวซ่อนด้าย</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">2</span><h3>ปักแก้มสีชมพู (Blush)</h3></div>
+                <p style="color:var(--text-secondary);">ใช้ดินสอปากกา Blush (Makeup) ค้นหา "Amigurumi blush" ออนไลน์ หรือใช้ด้ายชมพูปักจุดกลมๆ ข้างละ 1 จุด ด้านล่างตาแต่ละข้าง</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">3</span><h3>ผูกโบว์หรือผ้ากันเปื้อน (ตกแต่งเพิ่ม)</h3></div>
+                <p style="color:var(--text-secondary);">นำริบบิ้นเล็กๆ ผูกเป็นโบว์ที่คอ หรือถักผ้ากันเปื้อนจิ๋วเพิ่มความน่ารัก ชุดตุ๊กตา Amigurumi ที่ตกแต่งดีจะมีมูลค่าสูงมากเวลาขาย</p>
+            </div>
+
+            <div class="tip-box">
+                <div class="tip-title">🌟 ยินดีด้วย! ตุ๊กตาของคุณเสร็จแล้ว</div>
+                <p style="color:var(--text-secondary);margin:0;">ถ้าทรงออกมาไม่สมบูรณ์แบบในครั้งแรก ไม่ต้องกังวล — ทุกคนต้องผ่านจุดนั้น ยิ่งถักบ่อย ฝีมือยิ่งดีขึ้นเรื่อยๆ ลองถักหลายๆ ตัวแล้วจะเห็นพัฒนาการอย่างชัดเจน!</p>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- 13. Tips -->
+            <h2 id="tips" style="color:var(--accent);font-size:1.9rem;margin-bottom:1rem;">🏆 ขั้นที่ 13: เคล็ดลับจากมืออาชีพ</h2>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">✓</span><h3>ใช้เข็มเล็กกว่าที่ฉลากแนะนำ 1 ไซส์</h3></div>
+                <p style="color:var(--text-secondary);">เนื้อผ้าจะแน่นขึ้น ใยสังเคราะห์ไม่โผล่ ตุ๊กตาจะทรงสวยงามกว่ามาก</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">✓</span><h3>ถักเป็น Continuous Rounds (ไม่ต้องปิดแต่ละรอบ)</h3></div>
+                <p style="color:var(--text-secondary);">งาน Amigurumi ส่วนใหญ่ถักแบบวนต่อเนื่อง ไม่ต้อง sl st ปิดหรือ ch1 ขึ้นรอบใหม่ ใช้ Stitch Marker หนีบห่วงแรกของแต่ละรอบแทน</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">✓</span><h3>นับห่วงหลังทุกรอบ</h3></div>
+                <p style="color:var(--text-secondary);">ก่อนขึ้นรอบใหม่ นับจำนวนห่วงให้ครบตามแพทเทิร์นทุกครั้ง ถ้าผิดพลาดรีบแก้ตั้งแต่เนิ่นๆ จะง่ายกว่ามาก</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">✓</span><h3>ถักหัวก่อนเสมอ</h3></div>
+                <p style="color:var(--text-secondary);">หัวเป็นชิ้นส่วนที่สำคัญที่สุด มีรายละเอียดมากที่สุด ถักให้เสร็จสวยก่อน แล้วค่อยถักลำตัวและส่วนอื่นๆ ตาม</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-num">✓</span><h3>ใส่ Safety Eyes ก่อนยัดใยเสมอ</h3></div>
+                <p style="color:var(--text-secondary);">Safety Eyes มีก้านด้านหลัง ต้องสอดเข้าไปตอนรูยังเปิดอยู่ ถ้ายัดใยแล้วจะใส่ไม่ได้แน่นอน</p>
+            </div>
+
+            <!-- Progress Button -->
+            <div style="margin-top:3rem;text-align:center;">
+                <button id="mark-read-btn" class="btn btn-primary" data-article-id="article_2" style="font-size:1.2rem;padding:1rem 3rem;border-radius:50px;">
+                    <i class="fas fa-check-circle"></i> ทำเครื่องหมายว่าอ่านจบแล้ว ✅
+                </button>
+            </div>
+
+            <!-- Navigation -->
+            <div style="margin-top:2rem;border-top:1px solid var(--border);padding-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+                <a href="index.html#guide-section" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> กลับสู่คลังความรู้</a>
+                <a href="article_granny.html" class="btn btn-secondary">บทเรียนถัดไป: ลายแกรนนี่สแควร์ <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h2>Crochet<span>Studio</span></h2>
+                <p>เรามุ่งมั่นสร้างสรรค์พื้นที่แห่งแรงบันดาลใจ สำหรับคนรักงานถักโครเชต์และนิตติ้ง</p>
+                <div class="socials">
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>คลังความรู้</h4>
+                <ul>
+                    <li><a href="article.html">พื้นฐานนิตติ้ง</a></li>
+                    <li><a href="article_amigurumi.html">การถักตุ๊กตา</a></li>
+                    <li><a href="article_yarn.html">คู่มือไหมพรม</a></li>
+                    <li><a href="article_hooks.html">คู่มือเข็มถัก</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>แพทเทิร์น</h4>
+                <ul>
+                    <li><a href="patterns.html">หมวก & กระเป๋า</a></li>
+                    <li><a href="patterns.html">เสื้อผ้า</a></li>
+                    <li><a href="patterns.html">ของตกแต่งบ้าน</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>ติดต่อเรา</h4>
+                <ul>
+                    <li><a href="about.html">เรื่องราวของเรา</a></li>
+                    <li><a href="contact.html">ส่งข้อความหาเรา</a></li>
+                    <li><a href="faq.html">คำถามที่พบบ่อย</a></li>
+                    <li><a href="policy.html">นโยบายความเป็นส่วนตัว</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Crochet Studio. Crafted with absolute perfection.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=3.0"></script>
+</body>
+</html>
